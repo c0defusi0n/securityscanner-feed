@@ -7,8 +7,7 @@ Run by .github/workflows/update-feed.yml on a schedule.
 Safety:
 - Never overwrites feed.json with an empty/garbage result (a bad run leaves the last good feed).
 - Only rewrites when the item set actually changed (ignores the volatile 'updated' timestamp),
-  so unchanged runs produce no commit and no notification.
-- Writes new_items.md (the GitHub issue body) only when genuinely new ids appear.
+  so unchanged runs produce no commit.
 Pure stdlib — no pip install needed on the runner.
 """
 import json
@@ -22,8 +21,6 @@ from datetime import datetime, timezone
 MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
 FEED_PATH = os.environ.get("FEED_PATH") or "feed.json"
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS") or "15")
-NEW_ITEMS_PATH = "new_items.md"
-SIGNATURES_REPO = "https://github.com/c0defusi0n/securityscanner-signatures"
 
 SYSTEM = (
     "You are a security research assistant compiling a Magento / Adobe Commerce vulnerability "
@@ -188,19 +185,7 @@ def main():
         )
         f.write("\n")
 
-    old_ids = {i.get("id") for i in old}
-    added = [i for i in new if i["id"] not in old_ids]
-    print(f"feed.json updated: {len(new)} items, {len(added)} new.")
-    if added:
-        with open(NEW_ITEMS_PATH, "w", encoding="utf-8") as f:
-            f.write(f"Automated scan found **{len(added)} new** Magento / Adobe Commerce vulnerability item(s).\n\n")
-            for i in added:
-                f.write(f"- **{i['id']}** ({i['severity']}) — {i['title']}  \n  {i['url']}\n")
-            f.write(
-                "\n---\n\n**Action:** review these and, for any that a regex can catch, add a signature to "
-                f"[`securityscanner-signatures`]({SIGNATURES_REPO})'s `signatures.json` "
-                "(the daily signature-proposer PR may already include some).\n"
-            )
+    print(f"feed.json updated: {len(new)} items.")
 
 
 if __name__ == "__main__":

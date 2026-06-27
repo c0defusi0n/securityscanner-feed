@@ -45,12 +45,11 @@ GitHub Action runs every 6 hours (and on demand):
 
 1. [`scripts/generate_feed.py`](scripts/generate_feed.py) asks the Gemini API (with Google Search
    grounding) for the latest Magento / Adobe Commerce vulnerabilities and writes them in the schema above.
-2. If `feed.json` changed, it is committed and pushed.
-3. If new vulnerabilities appeared, an **issue is opened** listing them — your prompt to add new
-   detection signatures to [`securityscanner-signatures`](https://github.com/c0defusi0n/securityscanner-signatures).
+2. If `feed.json` changed, it is committed and pushed — the new vulnerabilities simply land in the feed.
 
-It never overwrites the feed with an empty/failed result, and an unchanged run produces no commit
-and no notification.
+New detection signatures for these vulnerabilities are proposed separately, as review PRs in
+[`securityscanner-signatures`](https://github.com/c0defusi0n/securityscanner-signatures). This repo
+never overwrites the feed with an empty/failed result, and an unchanged run produces no commit.
 
 ### One-time setup
 
