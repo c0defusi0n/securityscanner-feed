@@ -20,7 +20,6 @@ import urllib.error
 from datetime import datetime, timezone
 
 MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.1-flash-lite"
-API_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
 FEED_PATH = os.environ.get("FEED_PATH") or "feed.json"
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS") or "15")
 NEW_ITEMS_PATH = "new_items.md"
@@ -55,15 +54,26 @@ def _collect_text(c):
 
 
 def gemini_text(system, user):
-    """One grounded Interactions-API call. Returns the model's final text, or None on no output."""
+    """One grounded Gemini call (Google Search). Uses the Interactions API for Gemini 3.x models and
+    the classic generateContent endpoint for older ones. Returns the model's text, or None."""
     key = os.environ["GEMINI_API_KEY"]
-    payload = {
-        "model": MODEL,
-        "input": user,
-        "system_instruction": system,
-        "tools": [{"type": "google_search"}],   # web search grounding
-    }
-    req = urllib.request.Request(API_URL, data=json.dumps(payload).encode(), method="POST", headers={
+    if MODEL.startswith("gemini-3"):
+        url = "https://generativelanguage.googleapis.com/v1beta/interactions"
+        payload = {
+            "model": MODEL,
+            "input": user,
+            "system_instruction": system,
+            "tools": [{"type": "google_search"}],
+        }
+    else:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+        payload = {
+            "system_instruction": {"parts": [{"text": system}]},
+            "contents": [{"role": "user", "parts": [{"text": user}]}],
+            "tools": [{"google_search": {}}],
+            "generationConfig": {"temperature": 0, "maxOutputTokens": 8192},
+        }
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), method="POST", headers={
         "x-goog-api-key": key,
         "content-type": "application/json",
     })
@@ -91,6 +101,11 @@ def gemini_text(system, user):
     text = "".join(p for p in parts if p).strip()
     if text:
         return text
+    # generateContent shape (older models)
+    for cand in resp.get("candidates", []) or []:
+        t = _collect_text((cand.get("content") or {}).get("parts")).strip()
+        if t:
+            return t
     print("Could not locate model output; response keys=" + ",".join(resp.keys())
           + " | " + json.dumps(resp)[:800], file=sys.stderr)
     return None
