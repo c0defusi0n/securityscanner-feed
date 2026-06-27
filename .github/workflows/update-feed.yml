@@ -5,9 +5,9 @@ name: Update vulnerability feed
 # so the maintainer knows to consider new detection signatures.
 #
 # Setup (once):
-#   gh secret set ANTHROPIC_API_KEY --repo c0defusi0n/securityscanner-feed
-#   # optional, to use a cheaper model:
-#   gh variable set CLAUDE_MODEL --repo c0defusi0n/securityscanner-feed --body claude-sonnet-4-6
+#   gh secret set GEMINI_API_KEY --repo c0defusi0n/securityscanner-feed
+#   # optional, to use a different model (default gemini-2.5-flash):
+#   gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-2.5-pro
 
 on:
   schedule:
@@ -30,8 +30,8 @@ jobs:
 
       - name: Generate feed
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}   # optional override; defaults to claude-opus-4-8
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # optional override; defaults to gemini-2.5-flash
         run: python3 scripts/generate_feed.py
 
       - name: Commit, push and notify on change

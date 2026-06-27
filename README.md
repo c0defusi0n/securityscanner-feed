@@ -43,8 +43,8 @@ Fork and point the module at your fork to curate your own feed.
 This repo **updates itself**. The [`Update vulnerability feed`](.github/workflows/update-feed.yml)
 GitHub Action runs every 6 hours (and on demand):
 
-1. [`scripts/generate_feed.py`](scripts/generate_feed.py) asks the Claude API (with web search) for
-   the latest Magento / Adobe Commerce vulnerabilities and writes them in the schema above.
+1. [`scripts/generate_feed.py`](scripts/generate_feed.py) asks the Gemini API (with Google Search
+   grounding) for the latest Magento / Adobe Commerce vulnerabilities and writes them in the schema above.
 2. If `feed.json` changed, it is committed and pushed.
 3. If new vulnerabilities appeared, an **issue is opened** listing them — your prompt to add new
    detection signatures to [`securityscanner-signatures`](https://github.com/c0defusi0n/securityscanner-signatures).
@@ -54,16 +54,16 @@ and no notification.
 
 ### One-time setup
 
-Add your Anthropic API key as a repo secret (the key is never stored in the repo):
+Add your Google Gemini API key as a repo secret (the key is never stored in the repo):
 
 ```bash
-gh secret set ANTHROPIC_API_KEY --repo c0defusi0n/securityscanner-feed
+gh secret set GEMINI_API_KEY --repo c0defusi0n/securityscanner-feed
 ```
 
-Optional — use a cheaper model than the default `claude-opus-4-8`:
+Optional — override the default model `gemini-2.5-flash`:
 
 ```bash
-gh variable set CLAUDE_MODEL --repo c0defusi0n/securityscanner-feed --body claude-sonnet-4-6
+gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-2.5-pro
 ```
 
 Then trigger the first run from the **Actions** tab (or `gh workflow run "Update vulnerability feed"`).
