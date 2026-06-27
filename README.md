@@ -38,8 +38,32 @@ Fork and point the module at your fork to curate your own feed.
 - **Always include the authoritative `url`**: if the feed is AI-generated, the link lets an admin
   verify the summary. The module escapes all feed content on display.
 
-## Auto-generation
+## Auto-generation (configured)
 
-A typical setup is a scheduled job (GitHub Action or a scheduled Claude Code routine) that
-aggregates Adobe APSB + NVD/CVE + Sansec, asks an LLM to extract the latest Magento items into the
-shape above, and commits this file. The module refreshes its cache hourly and shows the latest.
+This repo **updates itself**. The [`Update vulnerability feed`](.github/workflows/update-feed.yml)
+GitHub Action runs every 6 hours (and on demand):
+
+1. [`scripts/generate_feed.py`](scripts/generate_feed.py) asks the Claude API (with web search) for
+   the latest Magento / Adobe Commerce vulnerabilities and writes them in the schema above.
+2. If `feed.json` changed, it is committed and pushed.
+3. If new vulnerabilities appeared, an **issue is opened** listing them — your prompt to add new
+   detection signatures to [`securityscanner-signatures`](https://github.com/c0defusi0n/securityscanner-signatures).
+
+It never overwrites the feed with an empty/failed result, and an unchanged run produces no commit
+and no notification.
+
+### One-time setup
+
+Add your Anthropic API key as a repo secret (the key is never stored in the repo):
+
+```bash
+gh secret set ANTHROPIC_API_KEY --repo c0defusi0n/securityscanner-feed
+```
+
+Optional — use a cheaper model than the default `claude-opus-4-8`:
+
+```bash
+gh variable set CLAUDE_MODEL --repo c0defusi0n/securityscanner-feed --body claude-sonnet-4-6
+```
+
+Then trigger the first run from the **Actions** tab (or `gh workflow run "Update vulnerability feed"`).

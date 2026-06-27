@@ -1,0 +1,54 @@
+name: Update vulnerability feed
+
+# Refreshes feed.json from the latest Magento / Adobe Commerce security sources via the
+# Claude API (web search), commits it when it changes, and opens an issue listing new items
+# so the maintainer knows to consider new detection signatures.
+#
+# Setup (once):
+#   gh secret set ANTHROPIC_API_KEY --repo c0defusi0n/securityscanner-feed
+#   # optional, to use a cheaper model:
+#   gh variable set CLAUDE_MODEL --repo c0defusi0n/securityscanner-feed --body claude-sonnet-4-6
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # every 6 hours (offset off the hour to avoid peak load)
+  workflow_dispatch: {}        # manual "Run workflow" button for testing
+
+permissions:
+  contents: write   # commit + push feed.json
+  issues: write     # open the "new vulnerabilities" issue
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate feed
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}   # optional override; defaults to claude-opus-4-8
+        run: python3 scripts/generate_feed.py
+
+      - name: Commit, push and notify on change
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- feed.json; then
+            echo "feed.json unchanged — nothing to do."
+            exit 0
+          fi
+          git config user.name "c0defusi0n"
+          git config user.email "cedricbonfigli@outlook.fr"
+          git add feed.json
+          git commit -m "Update vulnerability feed"
+          git push
+          if [ -s new_items.md ]; then
+            gh issue create \
+              --title "🔔 New Magento vulnerabilities — review signatures" \
+              --body-file new_items.md || echo "Issue creation failed (non-fatal)."
+          fi
