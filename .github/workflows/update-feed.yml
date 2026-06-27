@@ -6,7 +6,7 @@ name: Update vulnerability feed
 #
 # Setup (once):
 #   gh secret set GEMINI_API_KEY --repo c0defusi0n/securityscanner-feed
-#   # optional, to use a different model (default gemini-3.1-flash-lite):
+#   # optional, to use a different model (default gemini-2.5-flash):
 #   gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-3.5-flash
 
 on:
@@ -31,7 +31,7 @@ jobs:
       - name: Generate feed
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # optional override; defaults to gemini-3.1-flash-lite
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # optional override; defaults to gemini-2.5-flash
         run: python3 scripts/generate_feed.py
 
       - name: Commit, push and notify on change

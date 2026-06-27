@@ -19,7 +19,7 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timezone
 
-MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.1-flash-lite"
+MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
 FEED_PATH = os.environ.get("FEED_PATH") or "feed.json"
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS") or "15")
 NEW_ITEMS_PATH = "new_items.md"

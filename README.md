@@ -60,7 +60,8 @@ Add your Google Gemini API key as a repo secret (the key is never stored in the 
 gh secret set GEMINI_API_KEY --repo c0defusi0n/securityscanner-feed
 ```
 
-Optional — override the default model `gemini-3.1-flash-lite`:
+Optional — override the default model `gemini-2.5-flash` (works on the free tier; the Gemini **3.x**
+models need billing enabled on the project for Google Search grounding):
 
 ```bash
 gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-3.5-flash
