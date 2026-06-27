@@ -60,10 +60,10 @@ Add your Google Gemini API key as a repo secret (the key is never stored in the 
 gh secret set GEMINI_API_KEY --repo c0defusi0n/securityscanner-feed
 ```
 
-Optional — override the default model `gemini-2.5-flash`:
+Optional — override the default model `gemini-3.1-flash-lite`:
 
 ```bash
-gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-2.5-pro
+gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-3.5-flash
 ```
 
 Then trigger the first run from the **Actions** tab (or `gh workflow run "Update vulnerability feed"`).

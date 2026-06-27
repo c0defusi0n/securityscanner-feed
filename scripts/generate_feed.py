@@ -19,8 +19,8 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timezone
 
-MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash"
-API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.1-flash-lite"
+API_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
 FEED_PATH = os.environ.get("FEED_PATH") or "feed.json"
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS") or "15")
 NEW_ITEMS_PATH = "new_items.md"
@@ -41,14 +41,27 @@ USER = (
 )
 
 
+def _collect_text(c):
+    """Pull text out of an Interactions content value (string, block, or list of blocks)."""
+    if isinstance(c, str):
+        return c
+    if isinstance(c, dict):
+        if isinstance(c.get("text"), str):
+            return c["text"]
+        return _collect_text(c.get("content"))
+    if isinstance(c, list):
+        return "".join(_collect_text(x) for x in c)
+    return ""
+
+
 def gemini_text(system, user):
-    """One grounded generateContent call. Returns the concatenated text, or None on no/blocked output."""
+    """One grounded Interactions-API call. Returns the model's final text, or None on no output."""
     key = os.environ["GEMINI_API_KEY"]
     payload = {
-        "system_instruction": {"parts": [{"text": system}]},
-        "contents": [{"role": "user", "parts": [{"text": user}]}],
-        "tools": [{"google_search": {}}],   # web search grounding (Gemini 2.x+)
-        "generationConfig": {"temperature": 0, "maxOutputTokens": 8192},
+        "model": MODEL,
+        "input": user,
+        "system_instruction": system,
+        "tools": [{"type": "google_search"}],   # web search grounding
     }
     req = urllib.request.Request(API_URL, data=json.dumps(payload).encode(), method="POST", headers={
         "x-goog-api-key": key,
@@ -58,18 +71,25 @@ def gemini_text(system, user):
         with urllib.request.urlopen(req, timeout=180) as r:
             resp = json.loads(r.read())
     except urllib.error.HTTPError as e:
-        print(f"Gemini HTTP {e.code}: {e.read().decode(errors='replace')[:500]}", file=sys.stderr)
-        # Config problems (bad key/model/request) → fail loudly; transient → leave feed untouched.
+        print(f"Gemini HTTP {e.code}: {e.read().decode(errors='replace')[:600]}", file=sys.stderr)
+        # Config problems (bad key/model/request) → fail loudly; transient → leave files untouched.
         sys.exit(1 if e.code in (400, 401, 403, 404) else 0)
     except Exception as e:
         print(f"Request failed: {e}", file=sys.stderr)
         sys.exit(0)
-    cands = resp.get("candidates") or []
-    if not cands:
-        print(f"No candidates (promptFeedback={resp.get('promptFeedback')})", file=sys.stderr)
-        return None
-    parts = (cands[0].get("content") or {}).get("parts") or []
-    return "".join(p.get("text", "") for p in parts if isinstance(p, dict) and "text" in p)
+    ot = resp.get("output_text")
+    if isinstance(ot, str) and ot.strip():
+        return ot
+    parts = []
+    for step in resp.get("steps", []) or []:
+        if isinstance(step, dict) and step.get("type") in ("model_output", "model_response", "output"):
+            parts.append(_collect_text(step.get("content")))
+    text = "".join(p for p in parts if p).strip()
+    if text:
+        return text
+    print("Could not locate model output; response keys=" + ",".join(resp.keys())
+          + " | " + json.dumps(resp)[:800], file=sys.stderr)
+    return None
 
 
 def parse_items(text):

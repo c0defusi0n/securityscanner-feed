@@ -1,13 +1,13 @@
 name: Update vulnerability feed
 
 # Refreshes feed.json from the latest Magento / Adobe Commerce security sources via the
-# Claude API (web search), commits it when it changes, and opens an issue listing new items
-# so the maintainer knows to consider new detection signatures.
+# Gemini API (Google Search grounding), commits it when it changes, and opens an issue listing
+# new items so the maintainer knows to consider new detection signatures.
 #
 # Setup (once):
 #   gh secret set GEMINI_API_KEY --repo c0defusi0n/securityscanner-feed
-#   # optional, to use a different model (default gemini-2.5-flash):
-#   gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-2.5-pro
+#   # optional, to use a different model (default gemini-3.1-flash-lite):
+#   gh variable set GEMINI_MODEL --repo c0defusi0n/securityscanner-feed --body gemini-3.5-flash
 
 on:
   schedule:
@@ -31,7 +31,7 @@ jobs:
       - name: Generate feed
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # optional override; defaults to gemini-2.5-flash
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}   # optional override; defaults to gemini-3.1-flash-lite
         run: python3 scripts/generate_feed.py
 
       - name: Commit, push and notify on change
