@@ -1,45 +1,45 @@
 {
-  "updated": "2026-07-08T03:46:17Z",
+  "updated": "2026-07-08T08:45:09Z",
   "items": [
-    {
-      "id": "N/A (Sansec Research)",
-      "severity": "critical",
-      "title": "Amasty Multiple Extension Vulnerabilities (including one critical RCE)",
-      "published": "2026-07-02",
-      "url": "https://sansec.io/research",
-      "summary": "Sansec reported a massive security release for 25 Amasty extensions, with at least one critical vulnerability leading to remote code execution."
-    },
     {
       "id": "CVE-2026-53787",
       "severity": "critical",
       "title": "Unauthenticated File Upload in Amasty Order Attributes for Magento",
       "published": "2026-06-12",
-      "url": "https://sansec.io/research",
+      "url": "https://sansec.io/research/amasty-order-attributes-file-upload",
       "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento (Unauthenticated PHP object injection)",
-      "published": "2026-05-25",
+      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento (PHP Object Injection)",
+      "published": "2026-05-26",
       "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
-      "summary": "Sansec discovered an unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, allowing remote code execution via a crafted cookie without authentication."
+      "summary": "Sansec discovered an unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, a popular Magento extension, which can lead to remote code execution via a crafted cookie."
     },
     {
       "id": "APSB26-49",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce",
       "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "Adobe released a security update addressing multiple critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source, which could lead to unauthorized access, remote code execution, and service disruption."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
+      "summary": "This Adobe Security Bulletin addresses multiple critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source, which could lead to unauthorized access, remote code execution, and service disruption."
+    },
+    {
+      "id": "PolyShell (Sansec)",
+      "severity": "critical",
+      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
+      "published": "2026-03-17",
+      "url": "https://sansec.io/research/polyshell-vulnerability",
+      "summary": "Sansec discovered a critical flaw in Magento's REST API, named PolyShell, that allows unauthenticated attackers to upload executable files disguised as images, bypassing validation and potentially leading to system compromise."
     },
     {
       "id": "APSB26-05",
       "severity": "critical",
       "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
       "published": "2026-03-10",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "Adobe released a critical security update for Adobe Commerce and Magento Open Source to address multiple vulnerabilities that could allow attackers to bypass security controls and gain escalated privileges."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
+      "summary": "This critical security update for Adobe Commerce and Magento Open Source addresses multiple vulnerabilities that could allow attackers to bypass security controls, gain escalated privileges, execute unauthorized malicious code, and compromise store data."
     }
   ]
 }
