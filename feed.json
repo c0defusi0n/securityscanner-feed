@@ -1,61 +1,53 @@
 {
-  "updated": "2026-07-08T14:42:16Z",
+  "updated": "2026-07-08T19:56:48Z",
   "items": [
+    {
+      "id": "N/A",
+      "severity": "critical",
+      "title": "Amasty patches 25 Magento extensions, including one critical RCE vulnerability",
+      "published": "2026-07-02",
+      "url": "https://sansec.io/research/magento",
+      "summary": "Amasty released a security update for 25 Magento extensions, with one critical vulnerability allowing remote code execution."
+    },
+    {
+      "id": "CVE-2026-53787",
+      "severity": "critical",
+      "title": "Unauthenticated arbitrary file upload in Amasty Order Attributes for Magento",
+      "published": "2026-06-12",
+      "url": "https://sansec.io/research/magento",
+      "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in, leading to remote code execution."
+    },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Unauthenticated PHP object injection in Mirasvit Cache Warmer",
-      "published": "2026-05-25",
-      "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
-      "summary": "A critical unauthenticated PHP object injection vulnerability in the Mirasvit Cache Warmer extension for Magento and Adobe Commerce allows remote code execution via a crafted cookie. CISA has added this flaw to its Known Exploited Vulnerabilities catalog due to active exploitation."
+      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento (PHP object injection leading to RCE)",
+      "published": "2026-05-26",
+      "url": "https://sansec.io/research/critical-vulnerability-in-mirasvit-cache-warmer-for-magento",
+      "summary": "An unauthenticated PHP object injection flaw in Mirasvit Cache Warmer allows remote code execution via a crafted cookie on any storefront page. CISA has added this actively exploited vulnerability to its KEV catalog."
     },
     {
       "id": "APSB26-49",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Security update available for Adobe Commerce and Magento Open Source",
       "published": "2026-05-12",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "This Adobe Security Bulletin addresses multiple security vulnerabilities, including critical, important, and moderate issues, that could lead to unauthorized access, remote code execution, and service disruption in Adobe Commerce and Magento Open Source."
+      "summary": "This update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, arbitrary file system write, application denial-of-service, and security feature bypass."
     },
     {
-      "id": "PolyShell (Sansec)",
+      "id": "CVE-2026-21296",
       "severity": "critical",
-      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
-      "published": "2026-03-17",
-      "url": "https://sansec.io/research/polyshell-vulnerability",
-      "summary": "Sansec discovered a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files (polyglots) to any store. Sansec has observed exploitation attempts against a significant percentage of protected Magento stores."
+      "title": "Adobe Commerce Auth Bypass Vulnerability",
+      "published": "2026-03-13",
+      "url": "https://www.sentinelone.com/labs/cve-2026-21296-adobe-commerce-auth-bypass-vulnerability/",
+      "summary": "An Incorrect Authorization vulnerability allows low-privileged attackers to bypass security features and gain unauthorized view access to data without user interaction. This is addressed in APSB26-05."
     },
     {
       "id": "APSB26-05",
       "severity": "critical",
-      "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
+      "title": "Critical Security Update for Adobe Commerce and Magento Open Source",
       "published": "2026-03-10",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
-      "summary": "This critical security update addresses multiple vulnerabilities in Adobe Commerce and Magento Open Source that could allow attackers to bypass security controls, gain escalated privileges, and execute unauthorized malicious code."
-    },
-    {
-      "id": "APSB25-50 (CVE-2025-47110)",
-      "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
-      "published": "2025-06-10",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb25-50.html",
-      "summary": "This regularly scheduled security update resolves critical and important vulnerabilities, including CVE-2025-47110, a stored cross-site scripting (XSS) vulnerability via server-side template injection, and issues leading to privilege escalation and arbitrary code execution."
-    },
-    {
-      "id": "CVE-2025-54236",
-      "severity": "critical",
-      "title": "SessionReaper, unauthenticated RCE in Magento & Adobe Commerce",
-      "published": "2025-09-08",
-      "url": "https://sansec.io/research/sessionreaper-magento-rce",
-      "summary": "Named 'SessionReaper' by Sansec, this critical unauthenticated remote code execution (RCE) bug allows customer account takeover and full control of a store. Automated attacks have been observed against over 50% of stores globally."
-    },
-    {
-      "id": "CVE-2024-34102",
-      "severity": "critical",
-      "title": "CosmicSting: critical bug in Adobe Commerce and Magento Open Source",
-      "published": "2024-06-26",
-      "url": "https://sansec.io/research/cosmicsting-attack-defense-overview",
-      "summary": "This critical vulnerability, also known as CosmicSting, allows attackers to read any files, including secret crypt keys, and can be combined with other bugs for remote code execution and malware injection. Adobe confirmed that this CVE has been exploited in the wild."
+      "summary": "This security update addresses multiple critical vulnerabilities that could allow attackers to bypass security mechanisms, gain escalated privileges, execute unauthorized malicious code, and compromise store data."
     }
   ]
 }
