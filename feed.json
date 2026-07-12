@@ -1,85 +1,53 @@
 {
-  "updated": "2026-07-12T08:32:51Z",
+  "updated": "2026-07-12T13:57:33Z",
   "items": [
     {
       "id": "CVE-2026-53787",
       "severity": "critical",
-      "title": "Unauthenticated arbitrary file upload in Amasty Order Attributes for Magento",
+      "title": "Unauthenticated File Upload in Amasty Order Attributes for Magento",
       "published": "2026-06-12",
-      "url": "https://sansec.io/research",
-      "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes (CVE-2026-53787) allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution."
+      "url": "https://sansec.io/research/amasty-order-attributes-file-upload",
+      "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in. This vulnerability can lead to remote code execution on affected systems."
+    },
+    {
+      "id": "APSB25-50",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce (CVE-2025-47110 and others)",
+      "published": "2026-05-20",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-resources/release-notes/adobe-commerce-security-update-released-apsb25-50.html",
+      "summary": "This update resolves critical and important vulnerabilities, including a stored cross-site scripting (XSS) vulnerability via server-side template injection (CVE-2025-47110). Successful exploitation could lead to security feature bypass, privilege escalation, and arbitrary code execution."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Unauthenticated PHP object injection in Mirasvit Cache Warmer leading to Remote Code Execution",
-      "published": "2026-05-25",
-      "url": "https://sansec.io/research/mirasvit-cache-warmer-rce",
-      "summary": "A critical unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer (CVE-2026-45247) allows remote attackers to achieve code execution by sending a crafted cookie. Patches were released on May 25, 2026, and CISA added it to its KEV catalog due to active exploitation."
+      "title": "Unauthenticated PHP Object Injection in Mirasvit Cache Warmer",
+      "published": "2026-05-26",
+      "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
+      "summary": "Sansec discovered an unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, a popular Magento extension. This critical flaw, rated 9.8, allows remote code execution via a crafted CacheWarmer cookie."
     },
     {
       "id": "APSB26-49",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Adobe Commerce Security Update Released – APSB26-49",
       "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "This security update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source, which could lead to arbitrary code execution, arbitrary file system write, application denial-of-service, and security feature bypass."
-    },
-    {
-      "id": "CVE-2026-34646",
-      "severity": "critical",
-      "title": "Incorrect Authorization (Auth Bypass) in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://www.sentinelone.com/blog/cve-2026-34646-adobe-commerce-auth-bypass-vulnerability/",
-      "summary": "A critical incorrect authorization vulnerability (CVE-2026-34646) allows a remote, unauthenticated attacker to bypass security checks and gain unauthorized write access to Adobe Commerce."
-    },
-    {
-      "id": "CVE-2026-34651",
-      "severity": "critical",
-      "title": "Uncontrolled Resource Consumption (DoS) in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://www.sentinelone.com/blog/cve-2026-34651-adobe-commerce-dos-vulnerability/",
-      "summary": "A critical uncontrolled resource consumption flaw (CVE-2026-34651) in Adobe Commerce allows an unauthenticated attacker to exhaust system resources, leading to a denial-of-service condition."
+      "url": "https://www.rootways.inc/blog/adobe-commerce-security-update-released-apsb26-49/",
+      "summary": "This Adobe Security Bulletin addresses multiple critical, important, and moderate security vulnerabilities in Adobe Commerce and Magento Open Source. Risks include unauthorized access, remote code execution, and service disruption if left unpatched."
     },
     {
       "id": "PolyShell",
       "severity": "critical",
-      "title": "Unauthenticated file upload in Magento and Adobe Commerce REST API",
-      "published": "2026-05-12",
-      "url": "https://sansec.io/research/polyshell-magento-rce",
-      "summary": "A critical flaw, named PolyShell by Sansec, in Magento's REST API allows unauthenticated attackers to upload executable files by disguising code as an image, potentially leading to remote code execution. A fix was included in Magento 2.4.9, released on May 12, 2026."
-    },
-    {
-      "id": "CVE-2026-34645",
-      "severity": "high",
-      "title": "Incorrect Authorization in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "An incorrect authorization vulnerability (CVE-2026-34645) affecting Adobe Commerce was addressed as part of the APSB26-49 security update."
-    },
-    {
-      "id": "CVE-2026-34647",
-      "severity": "high",
-      "title": "Server-Side Request Forgery (SSRF) in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "A Server-Side Request Forgery (SSRF) vulnerability (CVE-2026-34647) affecting Adobe Commerce was addressed as part of the APSB26-49 security update."
-    },
-    {
-      "id": "CVE-2026-34653",
-      "severity": "high",
-      "title": "Path Traversal in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "A path traversal vulnerability (CVE-2026-34653) affecting Adobe Commerce was addressed as part of the APSB26-49 security update."
+      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
+      "published": "2026-03-17",
+      "url": "https://sansec.io/research/polyshell-magento-vulnerability",
+      "summary": "Sansec discovered PolyShell, a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files to any store. The attack uses a polyglot to bypass validation, potentially leading to remote code execution and account takeover."
     },
     {
       "id": "APSB26-05",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
-      "published": "2026-03-10",
-      "url": "https://helpx.adobe.com/security/security-bulletins.html",
-      "summary": "This security update for Adobe Commerce and Magento Open Source resolves critical, important, and moderate vulnerabilities that could lead to security feature bypass, privilege escalation, arbitrary code execution, and arbitrary file system read."
+      "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
+      "published": "2026-03-11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXsY3006QGa7dnQPQ3Uq9vO7S-Hpp8O96JnFUET39rpmiiOCMxpKvSCQgViNmYyi269QZ_MNRvDhq7k2xbn0fHpdJzQBjwrchxzA7HSBVMz08En3ociH4Cb_eHP_SSCvCi-XwlNwtatPp1KTiBwRFJanLUY7R-If7xgw==",
+      "summary": "This critical security update resolves multiple vulnerabilities (including CVE-2026-21285, CVE-2026-21286, CVE-2026-21296, CVE-2026-21297, CVE-2026-21310, and others) that could lead to security feature bypass, privilege escalation, arbitrary code execution, and unauthorized access to store data. Adobe recommends applying patches as quickly as possible."
     }
   ]
 }
