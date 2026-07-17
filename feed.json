@@ -1,37 +1,61 @@
 {
-  "updated": "2026-07-17T14:04:57Z",
+  "updated": "2026-07-17T19:34:15Z",
   "items": [
     {
-      "id": "APSB26-73",
+      "id": "APSB26-73 / CVE-2026-48358",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Arbitrary Code Execution via Improper Output Encoding in Webhooks",
       "published": "2026-07-14",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This update resolves critical vulnerabilities, including CVE-2026-48358 (unauthenticated arbitrary code execution in webhooks) and CVE-2026-48356 (unrestricted file upload). Adobe has released isolated patches, and exploitation in the wild is not yet known."
+      "summary": "A critical unauthenticated, zero-interaction vulnerability in Adobe Commerce and Magento Open Source webhooks component could lead to arbitrary code execution."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-48356",
+      "severity": "critical",
+      "title": "Unrestricted Upload of File with Dangerous Type",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This critical vulnerability in Adobe Commerce and Magento Open Source allows an attacker to upload dangerous file types, potentially leading to privilege escalation or arbitrary code execution."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47994",
+      "severity": "high",
+      "title": "Stored Cross-Site Scripting (XSS) leading to Privilege Escalation",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "A stored XSS flaw in Adobe Commerce and Magento Open Source enables privilege escalation by injecting scripts into the admin backend, which can lead to admin account takeover."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento",
-      "published": "2026-05-25",
+      "title": "Unauthenticated PHP Object Injection in Mirasvit Cache Warmer",
+      "published": "2026-05-26",
       "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
-      "summary": "An unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer allows remote code execution via a crafted CacheWarmer cookie. All versions before 1.11.12 are affected, and CISA has added it to its KEV catalog due to active exploitation."
+      "summary": "Sansec discovered a critical unauthenticated PHP object injection vulnerability in the Mirasvit Cache Warmer extension for Magento and Adobe Commerce, allowing remote code execution via a crafted cookie."
     },
     {
-      "id": "APSB26-49",
-      "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "This security update addresses multiple critical vulnerabilities, including stored Cross-site Scripting (XSS) leading to arbitrary code execution (CVE-2026-34686) and a Path Traversal vulnerability allowing arbitrary file system writes (CVE-2026-34653). It affects Adobe Commerce and Magento Open Source."
+      "id": "CVE-2026-34646",
+      "severity": "high",
+      "title": "Incorrect Authorization Vulnerability (Auth Bypass)",
+      "published": "2026-05-17",
+      "url": "https://www.sentinelone.com/labs/cve-2026-34646-adobe-commerce-auth-bypass-vulnerability/",
+      "summary": "An incorrect authorization vulnerability in Adobe Commerce allows a remote, unauthenticated attacker to bypass security checks and gain unauthorized write access to the application."
     },
     {
-      "id": "CVE-2026-34653",
+      "id": "PolyShell",
       "severity": "critical",
-      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
-      "published": "2026-05-12",
+      "title": "Unrestricted File Upload in Magento REST API",
+      "published": "2026-03-17",
       "url": "https://sansec.io/research/polyshell-magento-vulnerability",
-      "summary": "PolyShell, identified as CVE-2026-34653, is a critical flaw allowing unauthenticated attackers to upload executable files to Magento stores via the REST API. Adobe Commerce 2.4.9 contains a fix, and active exploitation has been observed."
+      "summary": "Sansec identified 'PolyShell', a critical flaw in Magento's REST API that permits unauthenticated attackers to upload executable files disguised as images, potentially leading to remote code execution."
+    },
+    {
+      "id": "APSB26-05",
+      "severity": "critical",
+      "title": "Multiple Critical Vulnerabilities in Adobe Commerce and Magento Open Source",
+      "published": "2026-03-10",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
+      "summary": "This security update resolves critical, important, and moderate vulnerabilities that could lead to security feature bypass, application denial-of-service, privilege escalation, arbitrary code execution, and arbitrary file system read."
     }
   ]
 }
