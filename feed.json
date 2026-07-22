@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T08:45:47Z",
+  "updated": "2026-07-22T14:23:31Z",
   "items": [
     {
       "id": "APSB26-73",
@@ -7,55 +7,47 @@
       "title": "Security update available for Adobe Commerce",
       "published": "2026-07-14",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source, including issues that could lead to arbitrary code execution, security feature bypass, and privilege escalation. Eight vulnerabilities are rated Critical, with the highest CVSS score of 9.6."
+      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation."
     },
     {
-      "id": "N/A (Amasty RCE)",
+      "id": "CVE-2026-48356",
       "severity": "critical",
-      "title": "Amasty patches 25 Magento extensions, 1 critical (RCE)",
-      "published": "2026-07-02",
-      "url": "https://sansec.io/research",
-      "summary": "Sansec reported that Amasty issued a massive security release for 25 extensions, with one critical vulnerability that can lead to remote code execution. Sansec Shield already blocks the critical issues."
+      "title": "File Upload Vulnerability in Adobe Commerce and Magento Open Source",
+      "published": "2026-07-15",
+      "url": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware.html",
+      "summary": "A critical file upload vulnerability (CVSS score: 9.6) in Adobe Commerce and Magento Open Source could lead to privilege escalation."
     },
     {
-      "id": "CVE-2026-53787",
+      "id": "CVE-2026-48358",
       "severity": "critical",
-      "title": "Unauthenticated file upload in Amasty Order Attributes for Magento",
-      "published": "2026-06-12",
-      "url": "https://sansec.io/research",
-      "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution."
+      "title": "Improper Encoding or Escaping of Output in Adobe Commerce and Magento Open Source",
+      "published": "2026-07-15",
+      "url": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware.html",
+      "summary": "This critical vulnerability (CVSS score: 9.1) in Adobe Commerce and Magento Open Source could lead to arbitrary code execution due to improper encoding or escaping of output."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento",
+      "title": "Unauthenticated PHP object injection in Mirasvit Cache Warmer for Magento",
       "published": "2026-05-25",
       "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
-      "summary": "Sansec discovered an unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, a full-page cache extension, which can lead to remote code execution with a CVSS score of 9.8. Mirasvit released a patched version (1.11.12) on May 25, 2026."
+      "summary": "Sansec discovered a critical unauthenticated PHP object injection vulnerability (CVSS 9.8) in Mirasvit Cache Warmer, a popular Magento extension, allowing remote code execution via a crafted cookie. Mirasvit released a patched version (1.11.12) on May 25, 2026."
     },
     {
-      "id": "APSB26-49 (CVE-2026-34654)",
-      "severity": "high",
-      "title": "Adobe Commerce DOS Vulnerability",
-      "published": "2026-05-17",
-      "url": "https://www.sentinelone.com/blog/cve-2026-34654-adobe-commerce-dos-vulnerability/",
-      "summary": "Adobe published fixed releases addressing CVE-2026-34654, an Improper Input Validation vulnerability that could lead to application denial-of-service. Administrators should upgrade to the fixed Commerce version."
-    },
-    {
-      "id": "N/A (PolyShell)",
+      "id": "PolyShell (unauthenticated file upload)",
       "severity": "critical",
       "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
       "published": "2026-03-17",
       "url": "https://sansec.io/research/polyshell-vulnerability",
-      "summary": "Sansec discovered a critical flaw, named PolyShell, in Magento's REST API that allows unauthenticated attackers to upload executable files to any store by using a polyglot to bypass validation. Attacks have been observed on a significant percentage of stores."
+      "summary": "Sansec discovered PolyShell, a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files to any store using a polyglot technique. Adobe released Magento 2.4.9 containing the fix on May 12, 2026, but older supported versions remain vulnerable without specific mitigation."
     },
     {
       "id": "APSB26-05",
       "severity": "critical",
-      "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
+      "title": "Critical Security Update for Adobe Commerce and Magento Open Source",
       "published": "2026-03-10",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
-      "summary": "This critical security update addresses multiple vulnerabilities in Adobe Commerce and Magento Open Source, including issues that could allow attackers to bypass security controls, gain escalated privileges, and execute unauthorized malicious code. The patch fixes several high-risk entry points, including incorrect authorization (RCE), improper access control (data leak), stored XSS (admin hijacking), and path traversal (file exposure)."
+      "url": "https://www.meetanshi.com/blog/magento-security-update-apsb26-05/",
+      "summary": "Adobe released APSB26-05, a critical security update addressing multiple vulnerabilities in Adobe Commerce and Magento Open Source. These vulnerabilities could allow attackers to bypass security controls, gain escalated privileges, and execute unauthorized malicious code."
     }
   ]
 }
