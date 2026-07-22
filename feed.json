@@ -1,93 +1,101 @@
 {
-  "updated": "2026-07-21T19:52:41Z",
+  "updated": "2026-07-22T03:48:54Z",
   "items": [
     {
-      "id": "APSB26-73",
+      "id": "CVE-2026-48358",
       "severity": "critical",
-      "title": "Security Updates Available for Adobe Commerce | APSB26-73",
+      "title": "Arbitrary Code Execution via Webhooks (APSB26-73)",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfnS3wGlew2LhcudjCPaA9faYe5Tc0d9HWDtDBz_Kdtp14i7b4obyiUggfZLqfEtt_dprGa4XCS2Twi5zFm--v7LWcTZC_7YXKbVgLg6HuZ8eAHiI-QTsfhbDnV5lWynBOF8eYz0R25AwQoiA76Ca3lPjRZTw4piEph0eQCkDBRTDajbQ",
+      "summary": "An unauthenticated, zero-interaction flaw in the webhooks component of Adobe Commerce and Magento Open Source (CVSS 10.0) allows for arbitrary code execution due to improper output encoding. This critical vulnerability affects all supported 2.4.x lines."
     },
     {
       "id": "CVE-2026-48356",
       "severity": "critical",
-      "title": "Unrestricted Upload of File with Dangerous Type (Privilege Escalation)",
+      "title": "Unrestricted Upload of Dangerous File Type (APSB26-73)",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical file upload vulnerability in Adobe Commerce and Magento Open Source that could lead to privilege escalation. This issue has a CVSS score of 9.6."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfnS3wGlew2LhcudjCPaA9faYe5Tc0d9HWDtDBz_Kdtp14i7b4obyiUggfZLqfEtt_dprGa4XCS2Twi5zFm--v7LWcTZC_7YXKbVgLg6HuZ8eAHiI-QTsfhbDnV5lWynBOF8eYz0R25AwQoiA76Ca3lPjRZTw4piEph0eQCkDBRTDajbQ",
+      "summary": "A critical vulnerability (CVSS 9.6) in Adobe Commerce and Magento Open Source allows an attacker to upload dangerous file types, potentially leading to privilege escalation and arbitrary code execution. This flaw can be exploited to plant malicious files on the server."
     },
     {
-      "id": "CVE-2026-48358",
+      "id": "APSB26-73",
       "severity": "critical",
-      "title": "Improper Encoding or Escaping of Output (Arbitrary Code Execution)",
+      "title": "Security update available for Adobe Commerce and Magento Open Source",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical vulnerability in Adobe Commerce and Magento Open Source related to improper encoding or escaping of output, potentially leading to arbitrary code execution. This issue has a CVSS score of 9.1."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1FI2c28DnQrXmTg1akT8YvUc1VSGCrSNRhDR5z7rTgSa0fCNAm__77TcjGoy9n3zaIgUE_CFDwHD_3JYO8AbeNoo3RS1li_LcCF-N5u23HCzbiGbkU-SX1JxYbfUzrAJOEtPQOWPuVzSs3PK-DKzXwolq92UfMPn0xU8=",
+      "summary": "Adobe released a security update resolving critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation."
     },
     {
       "id": "CVE-2026-47994",
-      "severity": "critical",
-      "title": "Cross-site Scripting (Stored XSS) (Privilege Escalation)",
+      "severity": "high",
+      "title": "Stored Cross-Site Scripting (XSS) leading to Privilege Escalation (APSB26-73)",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical stored XSS vulnerability in Adobe Commerce and Magento Open Source that could lead to privilege escalation. This issue has a CVSS score of 8.7."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfnS3wGlew2LhcudjCPaA9faYe5Tc0d9HWDtDBz_Kdtp14i7b4obyiUggfZLqfEtt_dprGa4XCS2Twi5zFm--v7LWcTZC_7YXKbVgLg6HuZ8eAHiI-QTsfhbDnV5lWynBOF8eYz0R25AwQoiA76Ca3lPjRZTw4piEph0eQCkDBRTDajbQ",
+      "summary": "A stored cross-site scripting flaw enables privilege escalation by injecting malicious scripts into the admin backend. This vulnerability can lead to admin account takeovers when an administrator views the poisoned record."
     },
     {
       "id": "CVE-2026-47988",
-      "severity": "critical",
-      "title": "Incorrect Authorization (Security Feature Bypass)",
+      "severity": "high",
+      "title": "Incorrect Authorization (APSB26-73)",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical incorrect authorization vulnerability in Adobe Commerce and Magento Open Source that could lead to security feature bypass. This issue has a CVSS score of 8.6."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfnS3wGlew2LhcudjCPaA9faYe5Tc0d9HWDtDBz_Kdtp14i7b4obyiUggfZLqfEtt_dprGa4XCS2Twi5zFm--v7LWcTZC_7YXKbVgLg6HuZ8eAHiI-QTsfhbDnV5lWynBOF8eYz0R25AwQoiA76Ca3lPjRZTw4piEph0eQCkDBRTDajbQ",
+      "summary": "An incorrect authorization flaw allows circumvention of default system rules in Adobe Commerce and Magento Open Source. This can lead to unauthorized access to resources."
     },
     {
       "id": "CVE-2026-47984",
-      "severity": "critical",
-      "title": "Incorrect Authorization (Security Feature Bypass)",
+      "severity": "high",
+      "title": "Incorrect Authorization (APSB26-73)",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical incorrect authorization vulnerability in Adobe Commerce and Magento Open Source that could lead to security feature bypass. This issue has a CVSS score of 8.2."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfnS3wGlew2LhcudjCPaA9faYe5Tc0d9HWDtDBz_Kdtp14i7b4obyiUggfZLqfEtt_dprGa4XCS2Twi5zFm--v7LWcTZC_7YXKbVgLg6HuZ8eAHiI-QTsfhbDnV5lWynBOF8eYz0R25AwQoiA76Ca3lPjRZTw4piEph0eQCkDBRTDajbQ",
+      "summary": "Another incorrect authorization vulnerability in Adobe Commerce and Magento Open Source grants unauthorized access to resources. This issue is part of the APSB26-73 security update."
     },
     {
-      "id": "CVE-2026-47995",
+      "id": "APSB25-50",
       "severity": "critical",
-      "title": "Cross-site Scripting (Stored XSS) (Privilege Escalation) in B2B",
-      "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical stored XSS vulnerability affecting Adobe Commerce B2B, potentially leading to privilege escalation. This issue has a CVSS score of 8.1."
+      "title": "Security update available for Adobe Commerce - APSB25-50",
+      "published": "2026-05-20",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoAPJmMdzwtntOpoinqWOilm4-g03CQePpvdSg0rCMcs-VAU8fI89qFnATjWNWQeieuOgEpSIWaMrv1AdnW2n61LGFzOcj02FsFGrsn-yVPYdFGmsph0gEgz1v0ieQG-rhRXlb8FgXfo27-TPv3mXOuWaD1qY1LnlvElvUz5IAykNtHqfjGoX2xbf1qisB",
+      "summary": "Adobe released a security update for Adobe Commerce and Magento Open Source, resolving critical and important vulnerabilities, including CVE-2025-47110. Successful exploitation could lead to security feature bypass, privilege escalation, and arbitrary code execution."
     },
     {
-      "id": "CVE-2026-47996",
+      "id": "CVE-2026-34654",
       "severity": "critical",
-      "title": "Incorrect Authorization (Security Feature Bypass)",
-      "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical incorrect authorization vulnerability in Adobe Commerce and Magento Open Source that could lead to security feature bypass. This issue has a CVSS score of 7.6."
+      "title": "Adobe Commerce DOS Vulnerability",
+      "published": "2026-05-17",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtfQoSUNZrXjmKTTmalior1QFPRHQaXCBfaU_W-Y57m_WOqlAFDbYwlW6u4gfIhSbZ_pQS99TgZSho4OnzJIoFLw0Nv11beeOQjRUVc-tTsx1giYhuRMMRKQqbS4t2IKTA-Ap-JSsxYs27qxhhlXG85zBceuH84xoqjx565g==",
+      "summary": "A denial-of-service vulnerability in Adobe Commerce, caused by a vulnerable third-party component, can be triggered remotely without authentication or user interaction. Successful exploitation crashes the application, disrupting storefront and administrative availability."
     },
     {
-      "id": "CVE-2026-47992",
-      "severity": "critical",
-      "title": "Improper Input Validation (Privilege Escalation)",
-      "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErdkALXePanOitfQpnBOUEffvp6s2Uy8aWX64s1riXaYNPj1S7UBy5zN83G1v4r60Wo6tgE0DabY_PLGaq8S9krGTfc39RjlUL1QqSqcgXOCQLMIFooynxPCI8KX6PgfFy_ybks6rKIkbFxF1TFstP74jPjQrGyujWIw==",
-      "summary": "A critical improper input validation vulnerability in Adobe Commerce and Magento Open Source that could lead to privilege escalation. This issue has a CVSS score of 7.2."
+      "id": "CVE-2026-34646",
+      "severity": "high",
+      "title": "Adobe Commerce Auth Bypass Vulnerability",
+      "published": "2026-05-17",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8yHZ2o8hUcFwGkwfgwiuuIal-wtgLD8UmrdbO4Gwq-wXb4crICPB3Uyd3Ho0S6z4yHC6a6e9V0doKA_lpNyAaId8zQlZ4KYvBIowmEaWjZ4KY5AgGhKGYSkzfWVVZV_gTDgoyxRfraSzZS9nEZ5uvlTBTM8GE9Mq1kre_9g==",
+      "summary": "An incorrect authorization flaw in Adobe Commerce allows remote, unauthenticated attackers to bypass security checks and gain unauthorized write access. This vulnerability has a CVSS 3.1 base score of 7.5."
     },
     {
-      "id": "APSB26-05",
+      "id": "APSB26-49",
       "severity": "critical",
-      "title": "Critical Security Update: Adobe Commerce and Magento Open Source (APSB26-05)",
-      "published": "2026-03-10",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYRZ6p6PltH1alBGHDxikMJrBjdkcKpwNJsF9qi6xlQ2rHK1dcstqVd73QOunZNmEodD3L_iPRWYsyp0B7CWdhpiGOMQ-gDflMGngAyKtpLxCockVQfZF-wYtZVoFyyO-FpP9GuwbQRwzj5h9bWOX0XIMu42cVh0Zjh3whUecz",
-      "summary": "This critical security update for Adobe Commerce and Magento Open Source addresses multiple vulnerabilities. Successful exploitation could lead to security feature bypass, application denial-of-service, privilege escalation, arbitrary code execution, and arbitrary file system read."
+      "title": "Security update for Adobe Commerce, Adobe Commerce B2B and Magento Open Source",
+      "published": "2026-05-12",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiQ_WrKFExdYj5SN5NA1E0r5qNvVIXADKicsD0oYwC9CDEDILcJHQZkDnGJLTgxI1ZvWjjiQcqaA4ccS9OgN2Q7BoVpxcUsOB33znxYfLzfYT2ucnLO-Ct0rfEoD0IOaqGMuhNoLEhpLpheYNNzYjnbFmsgKwWd0XNai8=",
+      "summary": "This bulletin fixes 15 CVEs, including critical vulnerabilities like CVE-2026-34686 (Stored XSS, CVSS 8.7, arbitrary code execution) and CVE-2026-34653 (Path Traversal, CVSS 8.7, arbitrary file system write). It also addresses DoS, SSRF, and authorization bypass issues."
     },
     {
       "id": "PolyShell",
       "severity": "critical",
       "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
       "published": "2026-03-17",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPAP1pN6xYi2z1tr8PIbvX_g_fSVQCynB-2F0jKtxXxXuJM-XRFAFgDWo8emKtO4AlHMXUzAPX5HijzOdqaTaJEw1V1jQJIUkJdWXNZJ1K23C6iVwCYzciNIh1fmc4H2x7k8BPVoY=",
-      "summary": "Sansec discovered a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files to any store. This vulnerability, named PolyShell, uses a polyglot to bypass validation and can lead to remote code execution or account takeover."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKipJ7c-EjDIxVJwyEfsUyZqDtwbEXfiMdyO1MScU3vhiFdoTI4a9IUiit3NJgBnEpREWIJZDr4VRWPmjyqxs74c7vTh1ggk5lidYn1WiuRcv9CjSE2MIz-vK7NpkUHMZuLARqoOov",
+      "summary": "Sansec discovered a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files to any store using a polyglot technique. While Adobe released Magento 2.4.9 with a fix, older supported versions remain vulnerable."
+    },
+    {
+      "id": "APSB26-05",
+      "severity": "critical",
+      "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
+      "published": "2026-03-10",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzoH7qUkhjhGVbaps2Mqtr1yqvK23_FzeVgErKzS5kohUmDPS17k2pJzF2f2edcWwPebcyuMeiMt7tULleDMxKewpc_9GVoVUeT3PDjQaCZq7QRR3cEFFSvHAxsvwuktcn7R9g2B6lxJ6cy7qwmI0aYioryEz3jd0G8xa9qSedjYXcHipNIaX_sKSwffK8pf1PuQ==",
+      "summary": "Adobe released a critical security update for Adobe Commerce and Magento Open Source, addressing multiple vulnerabilities that could allow attackers to bypass security controls and gain escalated privileges. Six of its 19 CVEs are rated Critical, including a CVSS 8.7 stored XSS flaw."
     }
   ]
 }
