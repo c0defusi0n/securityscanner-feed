@@ -1,117 +1,53 @@
 {
-  "updated": "2026-07-25T14:04:06Z",
+  "updated": "2026-07-25T19:35:42Z",
   "items": [
+    {
+      "id": "APSB26-73",
+      "severity": "critical",
+      "title": "Security Update for Adobe Commerce & Magento Open Source",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This Adobe Security Bulletin addresses multiple critical, important, and moderate vulnerabilities, including unrestricted file upload, improper output encoding, stored XSS, and incorrect authorization issues, which could lead to arbitrary code execution, privilege escalation, and security feature bypass."
+    },
+    {
+      "id": "CVE-2026-53787",
+      "severity": "critical",
+      "title": "Unauthenticated arbitrary file upload in Amasty Order Attributes for Magento",
+      "published": "2026-06-12",
+      "url": "https://sansec.io/research/unauthenticated-file-upload-amasty-order-attributes-magento",
+      "summary": "An unauthenticated arbitrary file upload vulnerability in the Amasty Order Attributes extension allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution."
+    },
+    {
+      "id": "CVE-2026-45247",
+      "severity": "critical",
+      "title": "Deserialization of untrusted data in Mirasvit Cache Warmer extension",
+      "published": "2026-06-03",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/03/cisa-adds-exploited-magento-rce-flaw-cve-2026-45247-kev-catalog",
+      "summary": "A critical deserialization of untrusted data vulnerability in the Mirasvit Cache Warmer extension (versions prior to 1.11.12) allows unauthenticated remote code execution via a crafted CacheWarmer cookie and has been actively exploited in the wild."
+    },
     {
       "id": "APSB26-49",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Security Update for Adobe Commerce, Adobe Commerce B2B and Magento Open Source",
       "published": "2026-05-12",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "Adobe has released a security update for Adobe Commerce and Magento Open Source that resolves critical, important, and moderate vulnerabilities. Successful exploitation could lead to arbitrary code execution, arbitrary file system write, application denial-of-service, and security feature bypass."
+      "summary": "This security update resolves 15 CVEs in Adobe Commerce and Magento Open Source, including critical Stored XSS (CVE-2026-34686) leading to arbitrary code execution and Path Traversal (CVE-2026-34653) allowing arbitrary file system writes."
     },
     {
-      "id": "CVE-2026-34686",
+      "id": "PolyShell",
       "severity": "critical",
-      "title": "Stored Cross-site Scripting (XSS) leading to arbitrary code execution",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Stored Cross-site Scripting (XSS) vulnerability in Adobe Commerce and Magento Open Source could enable arbitrary code execution."
+      "title": "Unrestricted file upload in Magento and Adobe Commerce REST API",
+      "published": "2026-03-17",
+      "url": "https://sansec.io/research/polyshell-magento-unrestricted-file-upload",
+      "summary": "Sansec discovered a critical flaw in Magento's REST API, named PolyShell, that enables unauthenticated attackers to upload executable files disguised as images, bypassing validation and leading to potential remote code execution."
     },
     {
-      "id": "CVE-2026-34653",
+      "id": "APSB26-05",
       "severity": "critical",
-      "title": "Path Traversal vulnerability allowing arbitrary file system writes",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Path Traversal vulnerability in Adobe Commerce and Magento Open Source allows for arbitrary file system writes."
-    },
-    {
-      "id": "CVE-2026-34645",
-      "severity": "critical",
-      "title": "Incorrect Authorization leading to security feature bypass",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "An Incorrect Authorization vulnerability in Adobe Commerce and Magento Open Source could lead to a security feature bypass."
-    },
-    {
-      "id": "CVE-2026-34646",
-      "severity": "critical",
-      "title": "Incorrect Authorization leading to security feature bypass",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "Another critical Incorrect Authorization vulnerability in Adobe Commerce and Magento Open Source could lead to a security feature bypass."
-    },
-    {
-      "id": "CVE-2026-34647",
-      "severity": "critical",
-      "title": "Server-Side Request Forgery (SSRF) enabling security feature bypass",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Server-Side Request Forgery (SSRF) vulnerability in Adobe Commerce and Magento Open Source enables security feature bypass."
-    },
-    {
-      "id": "CVE-2026-34648",
-      "severity": "critical",
-      "title": "Uncontrolled Resource Consumption leading to application denial-of-service",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Uncontrolled Resource Consumption vulnerability in Adobe Commerce and Magento Open Source could cause application denial-of-service."
-    },
-    {
-      "id": "CVE-2026-34649",
-      "severity": "critical",
-      "title": "Uncontrolled Resource Consumption leading to application denial-of-service",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "Another critical Uncontrolled Resource Consumption vulnerability in Adobe Commerce and Magento Open Source could cause application denial-of-service."
-    },
-    {
-      "id": "CVE-2026-34650",
-      "severity": "critical",
-      "title": "Uncontrolled Resource Consumption leading to application denial-of-service",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Uncontrolled Resource Consumption vulnerability in Adobe Commerce and Magento Open Source could cause application denial-of-service."
-    },
-    {
-      "id": "CVE-2026-34651",
-      "severity": "critical",
-      "title": "Uncontrolled Resource Consumption leading to application denial-of-service",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Uncontrolled Resource Consumption vulnerability in Adobe Commerce and Magento Open Source could cause application denial-of-service."
-    },
-    {
-      "id": "CVE-2026-34652",
-      "severity": "critical",
-      "title": "Uncontrolled Resource Consumption leading to application denial-of-service",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A critical Uncontrolled Resource Consumption vulnerability in Adobe Commerce and Magento Open Source could cause application denial-of-service."
-    },
-    {
-      "id": "CVE-2026-34654",
-      "severity": "high",
-      "title": "Vulnerable third-party component dependency",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "An important vulnerability in Adobe Commerce and Magento Open Source is due to a vulnerable third-party component dependency."
-    },
-    {
-      "id": "CVE-2026-34655",
-      "severity": "high",
-      "title": "Additional Stored XSS vulnerability",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "An important Stored XSS vulnerability exists in Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-34656",
-      "severity": "medium",
-      "title": "Improper access controls",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "A moderate vulnerability in Adobe Commerce and Magento Open Source is related to improper access controls."
+      "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
+      "published": "2026-03-10",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
+      "summary": "This critical security update for Adobe Commerce and Magento Open Source addresses multiple vulnerabilities that could allow attackers to bypass security controls, gain escalated privileges, execute malicious code, and access store data. It fixes 19 CVEs, with several critical issues."
     }
   ]
 }
