@@ -1,85 +1,125 @@
 {
-  "updated": "2026-07-29T03:42:47Z",
+  "updated": "2026-07-29T09:10:34Z",
   "items": [
     {
-      "id": "APSB26-73",
+      "id": "APSB26-73 / CVE-2026-48358",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Arbitrary Code Execution via Improper Output Encoding (Webhooks)",
       "published": "2026-07-14",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, security feature bypass, and privilege escalation. Adobe has also released an isolated patch for these issues."
+      "summary": "An unauthenticated, zero-interaction vulnerability in the webhooks component of Adobe Commerce and Magento Open Source could lead to arbitrary code execution."
     },
     {
-      "id": "CVE-2026-45247",
+      "id": "APSB26-73 / CVE-2026-48356",
       "severity": "critical",
-      "title": "Mirasvit Cache Warmer Unauthenticated PHP Object Injection (PolyShell)",
-      "published": "2026-05-25",
-      "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
-      "summary": "A critical unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, a popular Magento extension, allows remote code execution via a crafted cookie. This flaw, also referred to as PolyShell, has been actively exploited in the wild."
+      "title": "Unrestricted Upload of File with Dangerous Type leading to Arbitrary Code Execution",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This vulnerability in Adobe Commerce and Magento Open Source allows an attacker to upload malicious files, potentially leading to arbitrary code execution. Exploitation requires user interaction."
     },
     {
-      "id": "APSB26-49",
+      "id": "APSB26-73 / CVE-2026-47992",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "SQL Injection leading to Arbitrary Code Execution",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "A SQL Injection vulnerability in Adobe Commerce, Adobe Commerce B2B, and Magento Open Source could allow a high-privileged attacker to execute arbitrary code without user interaction."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47994",
+      "severity": "critical",
+      "title": "Stored Cross-Site Scripting (XSS) leading to Privilege Escalation",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "A stored XSS vulnerability in Adobe Commerce allows low-privileged attackers to inject malicious scripts into form fields, potentially leading to session hijacking or unauthorized actions."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47988",
+      "severity": "high",
+      "title": "Incorrect Authorization",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "An incorrect authorization vulnerability in Adobe Commerce could lead to security feature bypass."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47984",
+      "severity": "high",
+      "title": "Incorrect Authorization",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This incorrect authorization flaw in Adobe Commerce could grant unauthorized access to resources."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47995",
+      "severity": "high",
+      "title": "Cross-Site Scripting (Stored XSS)",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "A stored XSS vulnerability in Adobe Commerce could allow an attacker to inject malicious scripts."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47997",
+      "severity": "high",
+      "title": "Improper Input Validation",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "An improper input validation vulnerability in Adobe Commerce could lead to security issues."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47998",
+      "severity": "high",
+      "title": "Improper Input Validation",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This improper input validation vulnerability in Adobe Commerce could be exploited by an attacker."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-47999",
+      "severity": "high",
+      "title": "URL Redirection to Untrusted Site ('Open Redirect')",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "An open redirect vulnerability in Adobe Commerce could redirect users to untrusted sites."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-48000",
+      "severity": "high",
+      "title": "Information Exposure",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "An information exposure vulnerability in Adobe Commerce could lead to the disclosure of sensitive information."
+    },
+    {
+      "id": "APSB26-73 / CVE-2026-48371",
+      "severity": "high",
+      "title": "Security Feature Bypass",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "A security feature bypass vulnerability in Adobe Commerce could allow an attacker to circumvent security measures."
+    },
+    {
+      "id": "APSB26-49 / CVE-2026-34686",
+      "severity": "critical",
+      "title": "Stored Cross-Site Scripting (XSS) leading to Arbitrary Code Execution",
       "published": "2026-05-12",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "This security update addresses critical, important, and moderate vulnerabilities, including arbitrary code execution, arbitrary file system write, application denial-of-service, and security feature bypass."
+      "summary": "A stored XSS vulnerability in Adobe Commerce and Magento Open Source could lead to arbitrary code execution."
     },
     {
-      "id": "CVE-2026-34686",
-      "severity": "high",
-      "title": "Stored Cross-Site Scripting (XSS) in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "This vulnerability, part of APSB26-49, is a Stored XSS issue with a CVSS score of 8.7, which could lead to arbitrary code execution."
-    },
-    {
-      "id": "CVE-2026-34653",
-      "severity": "high",
-      "title": "Path Traversal in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
-      "summary": "Identified within APSB26-49, this Path Traversal vulnerability has a CVSS score of 8.7 and could result in arbitrary file system write."
-    },
-    {
-      "id": "CVE-2026-34646",
-      "severity": "high",
-      "title": "Incorrect Authorization in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://www.sentinelone.com/labs/cve-2026-34646-adobe-commerce-auth-bypass-vulnerability/",
-      "summary": "This incorrect authorization vulnerability (CVSS 7.5) allows a remote, unauthenticated attacker to bypass security checks and gain unauthorized write access to the application."
-    },
-    {
-      "id": "CVE-2026-34654",
-      "severity": "high",
-      "title": "Denial-of-Service in Adobe Commerce",
-      "published": "2026-05-12",
-      "url": "https://www.sentinelone.com/labs/cve-2026-34654-adobe-commerce-dos-vulnerability/",
-      "summary": "This denial-of-service vulnerability stems from a vulnerable third-party component, allowing unauthenticated network-based attackers to crash Adobe Commerce instances."
-    },
-    {
-      "id": "APSB26-05",
+      "id": "APSB26-49 / CVE-2026-34653",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Path Traversal leading to Arbitrary File System Write",
+      "published": "2026-05-12",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
+      "summary": "A path traversal vulnerability in Adobe Commerce and Magento Open Source could allow an attacker to write arbitrary files to the file system."
+    },
+    {
+      "id": "APSB26-05 / CVE-2026-21284",
+      "severity": "critical",
+      "title": "Incorrect Authorization leading to Arbitrary Code Execution",
       "published": "2026-03-10",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
-      "summary": "This critical security update addresses multiple vulnerabilities that could allow attackers to bypass security controls, gain escalated privileges, execute unauthorized malicious code, and compromise customer accounts."
-    },
-    {
-      "id": "CVE-2026-21290",
-      "severity": "high",
-      "title": "Stored Cross-Site Scripting (XSS) in Adobe Commerce",
-      "published": "2026-03-10",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
-      "summary": "Part of APSB26-05, this Stored XSS vulnerability has a CVSS score of 8.7 and could lead to privilege escalation, requiring admin access to exploit."
-    },
-    {
-      "id": "CVE-2025-54236",
-      "severity": "critical",
-      "title": "SessionReaper - Unauthenticated RCE in Magento & Adobe Commerce",
-      "published": "2025-09-08",
-      "url": "https://sansec.io/research/sessionreaper-magento-rce",
-      "summary": "This critical bug allows customer account takeover and unauthenticated remote code execution under certain conditions. Automated attacks exploiting this vulnerability were observed in the wild in October 2025 and continued into March 2026."
+      "summary": "An incorrect authorization vulnerability in Adobe Commerce and Magento Open Source could allow an attacker to execute code remotely."
     }
   ]
 }
