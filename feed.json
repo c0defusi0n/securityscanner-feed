@@ -1,69 +1,85 @@
 {
-  "updated": "2026-08-04T03:39:28Z",
+  "updated": "2026-08-04T09:10:01Z",
   "items": [
-    {
-      "id": "CVE-2026-48358",
-      "severity": "critical",
-      "title": "Adobe Commerce RCE Vulnerability (Improper Encoding or Escaping of Output)",
-      "published": "2026-07-20",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFC1qCu7CjkF_ZBcLrC2Dj5loUN41hd5orkJT6yXw0IL0gbZtLGEieE4C5WXBXyTtGGbUNNt3j3PwluEPAs391m-49YpCRP22S3b3aZPM7NUt0ZA8P5atpleN1wDr3aM6VhqKZI3-j9F1LvYGQ6LZdG6pm0fTZHKWI3L0mn2g==",
-      "summary": "A critical RCE vulnerability in Adobe Commerce, Magento Open Source, and Adobe Commerce B2B allows unauthenticated attackers to execute arbitrary code over the network due to improper encoding. This flaw can lead to full storefront compromise, payment data theft, and lateral movement."
-    },
     {
       "id": "APSB26-73",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce | APSB26-73",
+      "title": "Security update available for Adobe Commerce",
       "published": "2026-07-14",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This Adobe Security Bulletin addresses critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
-    },
-    {
-      "id": "CVE-2026-47984",
-      "severity": "high",
-      "title": "Incorrect Authorization Security Feature Bypass in Adobe Commerce",
-      "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqI3ocMmDfLNtFxMviWplMYXoSDDih-ZogDjHau6ts418fadwSakzKvadawU68Sj9sPat2oU7qUVXyvSUAgVi1nf3EGr13FOzWKLxr37AdlHgNP_0bgSz5sZ4AnZcY5W8YClVZFBlF9mD_Xd3yY6wA",
-      "summary": "An incorrect authorization vulnerability in Adobe Commerce and related products allows security controls to be bypassed, resulting in unauthorized read and write access to application resources. Exploitation does not require user interaction."
-    },
-    {
-      "id": "CVE-2026-53787",
-      "severity": "critical",
-      "title": "Unauthenticated file upload in Amasty Order Attributes for Magento",
-      "published": "2026-06-12",
-      "url": "https://sansec.io/research/amasty-order-attributes-file-upload",
-      "summary": "A critical unauthenticated arbitrary file upload flaw in Amasty Order Attributes (CVSS 9.3) allows attackers to write executable files to a Magento store without logging in. This vulnerability opens the door to remote code execution, and attacks were observed in the wild on the day the patch shipped."
+      "summary": "This update resolves critical, important, and moderate vulnerabilities, including arbitrary code execution, security feature bypass, and privilege escalation. It addresses 14 vulnerabilities, with 8 rated Critical, and some (CVE-2026-47988, CVE-2026-47984) require no authentication."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento (PHP object injection)",
-      "published": "2026-05-26",
+      "title": "Unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer",
+      "published": "2026-05-25",
       "url": "https://sansec.io/research/mirasvit-cache-warmer-rce",
-      "summary": "An unauthenticated PHP object injection flaw in Mirasvit Cache Warmer (CVSS 9.8) allows remote code execution via a single crafted cookie on any storefront page. All versions of the extension before 1.11.12 are vulnerable."
+      "summary": "Sansec discovered a critical unauthenticated PHP object injection flaw in Mirasvit Cache Warmer, a popular Magento extension, which can lead to remote code execution via a crafted cookie. Mirasvit released a patched version (1.11.12) on May 25, 2026."
+    },
+    {
+      "id": "APSB26-49",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce",
+      "published": "2026-05-12",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-49.html",
+      "summary": "This bulletin fixes 15 CVEs in Adobe Commerce, Adobe Commerce B2B, and Magento Open Source. Key issues include Stored XSS (CVE-2026-34686) leading to arbitrary code execution and Path Traversal (CVE-2026-34653) allowing arbitrary file system writes."
+    },
+    {
+      "id": "PolyShell vulnerability",
+      "severity": "critical",
+      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
+      "published": "2026-03-17",
+      "url": "https://sansec.io/research/polyshell-magento-unrestricted-file-upload",
+      "summary": "Sansec discovered a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files by disguising code as an image (polyglot). Adobe released Magento 2.4.9 with a fix, but older supported versions remained vulnerable initially."
     },
     {
       "id": "APSB26-05",
       "severity": "critical",
-      "title": "Critical Security Update: Adobe Commerce and Magento Open Source (APSB26-05)",
+      "title": "Critical Security Update: Adobe Commerce and Magento Open Source",
       "published": "2026-03-10",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-05.html",
-      "summary": "This critical security update addresses multiple vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could allow attackers to bypass security mechanisms, gain escalated privileges, execute unauthorized malicious code, or compromise customer accounts."
+      "summary": "This critical security update addresses multiple vulnerabilities, including security feature bypass, privilege escalation, and arbitrary code execution. It resolves 19 CVEs, with CVE-2026-21290 (Stored XSS) being one of the most severe."
     },
     {
-      "id": "PolyShell (no CVE provided in source)",
+      "id": "APSB25-88 / CVE-2025-54236",
       "severity": "critical",
-      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
-      "published": "2026-03-17",
-      "url": "https://sansec.io/research/polyshell-magento-rce",
-      "summary": "A critical flaw in Magento's REST API, named PolyShell, allows unauthenticated attackers to upload executable files to any store by disguising code as an image. While a fix is in Magento 2.4.9, older supported versions remain vulnerable without backports."
+      "title": "Security update available for Adobe Commerce / SessionReaper, unauthenticated RCE in Magento & Adobe Commerce",
+      "published": "2025-10-22",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-88.html",
+      "summary": "This critical vulnerability, named \"SessionReaper\" by Sansec, allows customer account takeover and unauthenticated remote code execution under certain conditions. Adobe confirmed in-the-wild exploitation and changed its priority rating to 1."
     },
     {
-      "id": "CVE-2025-54236",
+      "id": "CVE-2025-54267",
+      "severity": "high",
+      "title": "Incorrect Authorization vulnerability in Adobe Commerce",
+      "published": "2025-10-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-94.html",
+      "summary": "Adobe Commerce versions 2.4.9-alpha2 and earlier are affected by an Incorrect Authorization vulnerability. A low-privileged attacker could leverage this to access other user's data."
+    },
+    {
+      "id": "APSB25-50 / CVE-2025-47110",
       "severity": "critical",
-      "title": "Critical Adobe Commerce and Magento Open Source Flaw Allows Customer Account Takeover and RCE (SessionReaper)",
-      "published": "2025-09-09",
-      "url": "https://sansec.io/research/sessionreaper-magento-rce",
-      "summary": "This critical improper input validation flaw (CVSS 9.1) allows remote unauthenticated attackers to take over customer accounts through the Commerce REST API and potentially achieve Remote Code Execution. Mass attacks exploiting this vulnerability were observed in October 2025, with many stores remaining unpatched."
+      "title": "Security update available for Adobe Commerce",
+      "published": "2025-06-10",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-50.html",
+      "summary": "This regularly scheduled security update resolves critical and important vulnerabilities, including security feature bypass, privilege escalation, and arbitrary code execution. CVE-2025-47110, a stored XSS via server-side template injection, was specifically highlighted with an isolated patch."
+    },
+    {
+      "id": "APSB25-26",
+      "severity": "medium",
+      "title": "Security update available for Adobe Commerce",
+      "published": "2025-04-08",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-26.html",
+      "summary": "This update resolves important and moderate vulnerabilities that could lead to security feature bypass, privilege escalation, and application denial-of-service. Adobe was not aware of any exploits in the wild at the time of release."
+    },
+    {
+      "id": "APSB24-40 / CVE-2024-34102",
+      "severity": "critical",
+      "title": "Adobe Security Bulletin",
+      "published": "2025-03-11",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb24-40.html",
+      "summary": "This update resolves critical and important vulnerabilities, with successful exploitation potentially leading to arbitrary code execution, security feature bypass, and privilege escalation. Adobe was aware that CVE-2024-34102 had been exploited in the wild in limited attacks targeting Adobe Commerce merchants."
     }
   ]
 }
