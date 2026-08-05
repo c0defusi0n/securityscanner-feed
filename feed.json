@@ -1,61 +1,61 @@
 {
-  "updated": "2026-08-05T09:06:55Z",
+  "updated": "2026-08-05T14:34:29Z",
   "items": [
     {
       "id": "APSB26-73",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Adobe Security Bulletin APSB26-73",
       "published": "2026-07-14",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGAwEje1yKPJ6Ivsx8vgxMJuxOvMb0uqLJs2sQjmJHsoRF47UpRiWSIy_d4NZrh_OHSajOftHvn3g8BKDtsjtv8XpNrU-HalwcLGVXMFugx5AAdfHXjsc6Bp0HzMkrEjAnXlWk7W6HEfS0vCYWMYiYrVXT4_QYOEWGieo=",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities, including issues that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe has released isolated patches for these issues."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This Adobe Security Bulletin provides updates for Adobe Commerce and Magento Open Source, resolving critical, important, and moderate vulnerabilities. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
     },
     {
-      "id": "APSB26-49",
+      "id": "N/A (Amasty Critical)",
       "severity": "critical",
-      "title": "Security update for Adobe Commerce, Adobe Commerce B2B and Magento Open Source",
-      "published": "2026-05-12",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESPDLEuZXESoiKNpzZ1Q5kLuTSsett10_q3Fy3fGU5I7Ll3vXT8v-4d7CCJBzTaKh4GY4llcp0dkZ2dT3B95VDKN2zk_cLO55l0bFX9fmEKDoiWEkeM9UqvYiP3BowCnuyyFZ2h0tqbeKW0HbNyYFV_uARTZREbR0Dvo4=",
-      "summary": "This bulletin fixes 15 CVEs, with the most severe being CVE-2026-34686 (Stored XSS leading to arbitrary code execution) and CVE-2026-34653 (Path Traversal leading to arbitrary file system write). It affects multiple versions of Adobe Commerce and Magento Open Source."
+      "title": "Critical vulnerability in Amasty extensions",
+      "published": "2026-07-02",
+      "url": "https://sansec.io/research",
+      "summary": "Sansec reported that Amasty released a massive security update for 25 Magento extensions, with one critical vulnerability that could lead to remote code execution."
+    },
+    {
+      "id": "CVE-2026-53787",
+      "severity": "critical",
+      "title": "Unauthenticated file upload in Amasty Order Attributes for Magento",
+      "published": "2026-06-12",
+      "url": "https://sansec.io/research",
+      "summary": "An unauthenticated arbitrary file upload vulnerability (CVE-2026-53787) in Amasty Order Attributes allows attackers to upload executable files to a Magento store without authentication, potentially leading to remote code execution."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "PolyShell: Unauthenticated PHP object injection in Mirasvit Cache Warmer",
+      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento",
       "published": "2026-05-26",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbRcl97h2V4m7wg4I6bHAhIaaTlA1gGyU84zXrGaO53lH1qNgVW82ZvpVPyzBAQjDz1RSopVAtjblzNqma-H3n-kQVniSkmTWu9yqxTJ406lbTX1SIUQFbpP_fET8YPe5fTKNstiT5mHPaaOkjB7LW9UsjJqOFfdgbV6o2=",
-      "summary": "Sansec discovered a critical unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, a popular Magento extension, allowing remote code execution via a crafted cookie. Mirasvit released a patched version (1.11.12) on May 25, 2026."
+      "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
+      "summary": "Sansec discovered an unauthenticated PHP object injection vulnerability (CVE-2026-45247) in Mirasvit Cache Warmer, a Magento extension, enabling remote code execution via a crafted cookie. Mirasvit released a patched version (1.11.12) on May 25, 2026."
     },
     {
-      "id": "APSB26-05",
+      "id": "APSB26-49",
       "severity": "critical",
-      "title": "Critical Security Update for Adobe Commerce and Magento Open Source",
-      "published": "2026-03-10",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAxfJ8nIVFJao9vzvwgKgwjk8mfVvLz9nDam9WZjEXfgnE07TLWcaXv1N7LeqjxEmvGKJEasqcmR-5UOHMnQBeI1OebXrxN3uivzOA6AzzazKSZFAbh0KBThGWs8jpp6rALfYebXpkziVrFlAQZuzw7fIVs6pr3ndaJCKisNX_4imtZHibBVBIvPuD8GRCse2CnA==",
-      "summary": "This critical security update addresses multiple vulnerabilities, including incorrect authorization, improper access control, and stored XSS, which could lead to arbitrary code execution, privilege escalation, and data theft. It affects various versions of Adobe Commerce and Magento Open Source."
+      "title": "Adobe Commerce Security Update Released – APSB26-49",
+      "published": "2026-05-12",
+      "url": "https://www.rootways.com/blog/adobe-commerce-security-update-released-apsb26-49/",
+      "summary": "This Adobe Security Bulletin addresses multiple critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. These include stored XSS (CVE-2026-34686) leading to arbitrary code execution and path traversal (CVE-2026-34653) for arbitrary file system writes."
     },
     {
       "id": "PolyShell",
       "severity": "critical",
       "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
       "published": "2026-03-17",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9oMX00ObGvBuPXWtmq8lbGRlqHT7MYxnHT4J7CQbOkGh4w-5pjkQDxQooQLXn8R1rZAE-lFpreypNWFaQmDND9y6rxQc4I5Fj58DOKj9Zq149YHQPRhXP_CTfRFyYJClsM2nlQuj1",
-      "summary": "Sansec discovered a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files to any store using a polyglot technique. Adobe released Magento 2.4.9 containing the fix, but older supported versions remain vulnerable without backported patches."
+      "url": "https://sansec.io/research/polyshell-magento-vulnerability",
+      "summary": "Sansec identified PolyShell, a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files disguised as images. This vulnerability could lead to remote code execution."
     },
     {
-      "id": "CVE-2025-54236",
+      "id": "APSB26-05",
       "severity": "critical",
-      "title": "SessionReaper: Unauthenticated RCE in Magento & Adobe Commerce",
-      "published": "2025-09-01",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGlOHduu7y0HKkJpnbmId0HtiISsICkE5aH6TQeO7fhjZJ-Ud59-nb-NEYILSHy6xjqNmKmp9WkBQzRWrq0GsjCE0wk2NlenWuPyWxobXtL9TvyPdnm0JI9e4ZaMpWYBiUNgU=",
-      "summary": "This critical vulnerability allows unauthenticated remote code execution and customer account takeover under certain conditions, with mass attacks observed in the wild. Adobe released an emergency fix in September 2025, but many stores remained vulnerable."
-    },
-    {
-      "id": "CVE-2024-34102",
-      "severity": "critical",
-      "title": "CosmicSting: Critical bug allowing file reading and RCE",
-      "published": "2024-06-11",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJ-ubVAm21AvrKeLACmnPw0kfifYsZKHSMeE38_yM8Ud6mS5lfrIbUaCb94R8zsw99U4k_G3dHkeDGFKNOLvayjj89nW0XLPAn3elMI6w8xpndFbI31jT7eMHYcyCQnkBM",
-      "summary": "CosmicSting is a critical bug in Adobe Commerce and Magento platforms that allows attackers to read any files, including passwords and secret keys, and can lead to remote code execution. Adobe released a fix in June 2024, and exploitation in the wild has been observed."
+      "title": "Critical Security Update: Adobe Commerce and Magento Open Source (APSB26-05)",
+      "published": "2026-03-10",
+      "url": "https://www.meetanshi.com/blog/adobe-commerce-magento-security-update-march-2026-apsb26-05/",
+      "summary": "This critical security update for Adobe Commerce and Magento Open Source addresses multiple vulnerabilities, including critical incorrect authorization (CVE-2026-21284), improper access control (CVE-2026-21285), and stored XSS (CVE-2026-21310) issues. These could lead to full system takeover, data leaks, and admin hijacking."
     }
   ]
 }
