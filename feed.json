@@ -1,125 +1,69 @@
 {
-  "updated": "2026-09-03T21:03:57Z",
+  "updated": "2026-09-04T04:37:07Z",
   "items": [
     {
       "id": "CVE-2024-34102",
       "severity": "critical",
-      "title": "CosmicSting attack & defense overview",
+      "title": "CosmicSting Attack: Crypt Key Theft and Backdoors",
       "published": "2026-09-16",
-      "url": "https://sansec.io/research",
-      "summary": "CosmicSting is described as the worst bug to hit Magento and Adobe Commerce stores in two years, with Sansec observing stores getting hacked at a rate of 5 to 30 per hour. Merchants need to take immediate action."
+      "url": "https://sansec.io/research/cosmicsting-attack-defense-overview",
+      "summary": "The CosmicSting vulnerability allows attackers to steal crypt keys, mint admin API tokens, export customer data, and inject skimmers into CMS blocks. Sansec observed stores being hacked at a rate of 5 to 30 per hour."
     },
     {
       "id": "CVE-2025-54236",
       "severity": "critical",
-      "title": "SessionReaper, unauthenticated RCE in Magento & Adobe Commerce",
+      "title": "SessionReaper: Unauthenticated Remote Code Execution",
       "published": "2026-09-08",
-      "url": "https://sansec.io/research",
-      "summary": "SessionReaper is a critical bug in Magento & Adobe Commerce that may hand full control of a store to unauthenticated attackers. Automated attacks have reportedly hit over 50% of all stores."
+      "url": "https://sansec.io/research/sessionreaper-unauthenticated-rce-in-magento-adobe-commerce",
+      "summary": "SessionReaper is a critical bug in Magento and Adobe Commerce that enables unauthenticated remote code execution (RCE), potentially giving attackers full control of a store. Automated attacks have impacted over 50% of all stores."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Security Update for Adobe Commerce and Magento Open Source",
       "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "Adobe released a security update for Adobe Commerce and Magento Open Source, resolving critical, important, and moderate vulnerabilities. Successful exploitation could result in security feature bypass, arbitrary code execution, and privilege escalation."
+      "summary": "This security bulletin addresses seven vulnerabilities, including a critical unauthenticated authorization flaw (CVE-2026-71362) that could lead to customer account takeover and privilege escalation. Other issues include high-severity stored cross-site scripting and incorrect authorization vulnerabilities."
     },
     {
-      "id": "CVE-2026-71362",
+      "id": "APSB25-71",
       "severity": "critical",
-      "title": "Incorrect authorization vulnerability leading to elevated access",
+      "title": "Security Update for Adobe Commerce and Magento Open Source",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This critical vulnerability allows an unauthenticated remote attacker to switch a customer session to another customer account and escalate privileges without requiring administrator access. Indications suggest threat actors are attempting to exploit it in the wild."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
+      "summary": "Adobe released a security update resolving critical and important vulnerabilities that could lead to security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service. This bulletin includes CVE-2025-49554, CVE-2025-49555, CVE-2025-49556, and CVE-2025-49557."
     },
     {
       "id": "APSB26-73",
       "severity": "critical",
-      "title": "Security update for Adobe Commerce and Magento Open Source",
+      "title": "Security Update for Adobe Commerce and Magento Open Source",
       "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "Adobe released a security update for Adobe Commerce and Magento Open Source, resolving critical, important, and moderate vulnerabilities, including arbitrary code execution, privilege escalation, and security feature bypass."
+      "summary": "This update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
     },
     {
-      "id": "CVE-2026-48358",
+      "id": "N/A",
       "severity": "critical",
-      "title": "Unauthenticated arbitrary code execution via webhooks",
-      "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "Rated with a CVSS score of 10.0, this unauthenticated, zero-interaction flaw in the webhooks component can lead to arbitrary code execution, allowing an attacker with no account or login to run code on the store."
+      "title": "Amasty Extensions Critical Vulnerabilities",
+      "published": "2026-07-02",
+      "url": "https://sansec.io/research",
+      "summary": "Amasty issued a massive security release for dozens of its Magento extensions, addressing two critical vulnerabilities that could lead to remote code execution. Sansec Shield already blocks these critical issues."
     },
     {
       "id": "CVE-2026-53787",
       "severity": "critical",
-      "title": "Unauthenticated file upload in Amasty Order Attributes for Magento",
+      "title": "Unauthenticated File Upload in Amasty Order Attributes for Magento",
       "published": "2026-06-12",
-      "url": "https://sansec.io/research/amasty-order-attributes-file-upload-vulnerability",
-      "summary": "This unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution. Amasty fixed it in version 4.0.0."
+      "url": "https://sansec.io/research/amasty-order-attributes-unauthenticated-file-upload",
+      "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in, opening the door to remote code execution. The vulnerability has a critical CVSS score of 9.3."
     },
     {
       "id": "CVE-2026-45247",
       "severity": "critical",
-      "title": "Unauthenticated PHP object injection in Mirasvit Cache Warmer",
+      "title": "Critical Vulnerability in Mirasvit Cache Warmer for Magento",
       "published": "2026-05-26",
       "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
-      "summary": "Sansec discovered a critical unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer, a popular Magento full-page cache extension, which can lead to remote code execution via a crafted cookie. Mirasvit released a patched version (1.11.12) on May 25, 2026."
-    },
-    {
-      "id": "CVE-2026-48413",
-      "severity": "high",
-      "title": "Stored cross-site scripting vulnerability",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This high-severity stored cross-site scripting vulnerability could result in arbitrary code execution and requires authentication but not administrator privileges."
-    },
-    {
-      "id": "CVE-2026-48414",
-      "severity": "high",
-      "title": "Stored cross-site scripting vulnerability",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution, requiring authentication and administrator privileges for exploitation."
-    },
-    {
-      "id": "CVE-2026-48415",
-      "severity": "high",
-      "title": "Incorrect-authorization vulnerability affecting Adobe Commerce B2B",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This high-severity incorrect-authorization vulnerability affects Adobe Commerce B2B and could enable a security-feature bypass, requiring authentication but not administrator privileges."
-    },
-    {
-      "id": "CVE-2026-48416",
-      "severity": "high",
-      "title": "Incorrect-authorization vulnerability",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity incorrect-authorization vulnerability that could enable a security-feature bypass, requiring neither authentication nor administrator privileges."
-    },
-    {
-      "id": "CVE-2026-48356",
-      "severity": "high",
-      "title": "Plant malicious files on the server",
-      "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This vulnerability, part of APSB26-73, allows an attacker to plant malicious files on the server."
-    },
-    {
-      "id": "CVE-2026-47994",
-      "severity": "high",
-      "title": "Privilege escalation / feature bypass",
-      "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This vulnerability, part of APSB26-73, allows for privilege escalation or security feature bypass."
-    },
-    {
-      "id": "CVE-2026-47988",
-      "severity": "high",
-      "title": "Privilege escalation / feature bypass",
-      "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This vulnerability, part of APSB26-73, allows for privilege escalation or security feature bypass."
+      "summary": "An unauthenticated PHP object injection vulnerability in Mirasvit Cache Warmer allows remote code execution via a crafted CacheWarmer cookie on any storefront request. The flaw is tracked as CVE-2026-45247 and rated 9.8 (critical)."
     }
   ]
 }
