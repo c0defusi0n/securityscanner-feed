@@ -1,21 +1,13 @@
 {
-  "updated": "2026-09-09T11:26:26Z",
+  "updated": "2026-09-09T16:40:10Z",
   "items": [
     {
-      "id": "CVE-2026-75650",
+      "id": "CVE-2026-75650 (APSB26-146)",
       "severity": "critical",
-      "title": "Adobe Commerce and Magento Open Source Remote Code Execution (StyleSmuggler)",
+      "title": "Adobe Commerce and Magento Open Source Zero-Day Remote Code Execution (StyleSmuggler)",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This critical vulnerability, also known as StyleSmuggler, allows unauthenticated remote code execution due to improper neutralization of special elements in a template engine. Adobe is aware of active exploitation in the wild."
-    },
-    {
-      "id": "APSB26-146",
-      "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This security bulletin addresses CVE-2026-75650, a critical vulnerability that could lead to arbitrary code execution and is being actively exploited. Adobe recommends applying the hotfix immediately."
+      "summary": "This critical vulnerability, codenamed StyleSmuggler, allows unauthenticated attackers to achieve remote code execution by injecting malicious PHP code into Magento's template system. It has a CVSS score of 10.0 and is actively being exploited in the wild to deploy backdoors and web shells."
     },
     {
       "id": "APSB26-138",
@@ -23,7 +15,7 @@
       "title": "Security update available for Adobe Commerce and Magento Open Source",
       "published": "2026-09-08",
       "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-resources/security/security-update-available-for-adobe-commerce-apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities, including issues that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for these specific issues."
+      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for the issues addressed in this bulletin."
     },
     {
       "id": "APSB26-92",
@@ -31,95 +23,7 @@
       "title": "Security update available for Adobe Commerce and Magento Open Source",
       "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This security update resolves critical and important vulnerabilities that could result in arbitrary code execution, security feature bypass, and privilege escalation. Adobe is not aware of any exploits in the wild for the issues addressed in this bulletin."
-    },
-    {
-      "id": "CVE-2026-76200",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "Reported by a researcher, this CVE is part of the issues addressed in APSB26-146, contributing to the overall security update for Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-76201",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "Reported by a researcher, this CVE is part of the issues addressed in APSB26-146, contributing to the overall security update for Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-77109",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "Reported by a researcher, this CVE is part of the issues addressed in APSB26-146, contributing to the overall security update for Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-77108",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "Reported by a researcher, this CVE is part of the issues addressed in APSB26-146, contributing to the overall security update for Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-76202",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "Reported by a researcher, this CVE is part of the issues addressed in APSB26-146, contributing to the overall security update for Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-48416",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This CVE is one of several vulnerabilities addressed in APSB26-92, contributing to the resolution of critical and important issues in Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-48415",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This CVE is one of several vulnerabilities addressed in APSB26-92, contributing to the resolution of critical and important issues in Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-48414",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This CVE is one of several vulnerabilities addressed in APSB26-92, contributing to the resolution of critical and important issues in Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-48413",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This CVE is one of several vulnerabilities addressed in APSB26-92, contributing to the resolution of critical and important issues in Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-48411",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This CVE is one of several vulnerabilities addressed in APSB26-92, contributing to the resolution of critical and important issues in Adobe Commerce and Magento Open Source."
-    },
-    {
-      "id": "CVE-2026-48412",
-      "severity": "high",
-      "title": "Multiple Vulnerabilities in Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This CVE is one of several vulnerabilities addressed in APSB26-92, contributing to the resolution of critical and important issues in Adobe Commerce and Magento Open Source."
+      "summary": "This security update addresses critical and important vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could result in arbitrary code execution, security feature bypass, and privilege escalation."
     }
   ]
 }
