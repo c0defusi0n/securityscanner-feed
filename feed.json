@@ -1,29 +1,61 @@
 {
-  "updated": "2026-09-08T21:11:02Z",
+  "updated": "2026-09-09T04:45:48Z",
   "items": [
-    {
-      "id": "CVE-2026-75650 (APSB26-146)",
-      "severity": "critical",
-      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE) Zero-Day",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This critical vulnerability allows unauthenticated attackers to execute arbitrary code on affected Adobe Commerce and Magento Open Source installations. Adobe is aware of active exploitation in the wild, with attacks starting on September 4, 2026."
-    },
     {
       "id": "APSB26-138",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Security update available for Adobe Commerce | APSB26-138",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for the issues addressed in this bulletin, aside from CVE-2026-75650."
+      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for these issues."
+    },
+    {
+      "id": "APSB26-146",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce | APSB26-146 (StyleSmuggler)",
+      "published": "2026-09-07",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
+      "summary": "This update resolves a critical vulnerability, CVE-2026-75650 (CVSS 10.0), that could result in arbitrary code execution and has been actively exploited in the wild to deploy Rust backdoors and PHP web shells. All versions from 2.4.4 up to and including 2.4.9 are affected."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
-      "published": "2026-08-18",
+      "title": "Security update available for Adobe Commerce | APSB26-92",
+      "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This update addresses critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could result in security feature bypass, arbitrary code execution, and privilege escalation."
+      "summary": "This update resolves critical, important, and moderate vulnerabilities that could result in security feature bypass, arbitrary code execution, and privilege escalation. Adobe is not aware of any exploits in the wild for these issues."
+    },
+    {
+      "id": "APSB26-73",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce | APSB26-73",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This update resolves critical, important, and moderate vulnerabilities, including CVE-2026-71362, which could lead to arbitrary code execution, privilege escalation, and security feature bypass. CVE-2026-71362 is an incorrect authorization vulnerability that could enable elevated access without authentication."
+    },
+    {
+      "id": "PolyShell (APSB25-94)",
+      "severity": "critical",
+      "title": "PolyShell: unrestricted file upload in Magento and Adobe Commerce",
+      "published": "2026-03-17",
+      "url": "https://sansec.io/research/polyshell",
+      "summary": "Sansec discovered PolyShell, a critical flaw in Magento's REST API that allows unauthenticated attackers to upload executable files to any store by disguising code as an image. Adobe fixed this in the 2.4.9 pre-release branch as part of APSB25-94."
+    },
+    {
+      "id": "APSB25-50",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce | APSB25-50",
+      "published": "2025-06-10",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-50.html",
+      "summary": "This update resolves critical and important vulnerabilities, including CVE-2025-47110, that could lead to security feature bypass, privilege escalation, and arbitrary code execution. The bulletin was last updated on August 11, 2026."
+    },
+    {
+      "id": "APSB25-26",
+      "severity": "medium",
+      "title": "Security update available for Adobe Commerce | APSB25-26",
+      "published": "2025-04-08",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-26.html",
+      "summary": "This update resolves important and moderate vulnerabilities, including CVE-2025-27190, CVE-2025-27191, CVE-2025-27188, and CVE-2025-27189, that could lead to security feature bypass, privilege escalation, and application denial-of-service. The bulletin was last updated on August 11, 2026."
     }
   ]
 }
