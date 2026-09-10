@@ -1,69 +1,53 @@
 {
-  "updated": "2026-09-10T04:45:43Z",
+  "updated": "2026-09-10T11:23:06Z",
   "items": [
     {
-      "id": "CVE-2026-75650 (APSB26-146)",
+      "id": "APSB26-146 / CVE-2026-75650",
       "severity": "critical",
-      "title": "StyleSmuggler: Magento and Adobe Commerce 0-day RCE under active attack",
+      "title": "Unauthenticated Remote Code Execution (RCE) via StyleSmuggler",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This critical zero-day vulnerability allows unauthenticated attackers to achieve remote code execution and has been actively exploited in the wild since September 4, 2026. Adobe released an emergency hotfix on September 7, 2026."
+      "summary": "This zero-day vulnerability allows unauthenticated attackers to achieve remote code execution by injecting malicious code into Magento's template system and is actively exploited in the wild. Adobe released an emergency hotfix for this critical flaw."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Security update available for Adobe Commerce (September 2026)",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities, including issues that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe recommends applying the hotfix for CVE-2026-75650 before this update."
+      "summary": "This regularly scheduled security update addresses multiple vulnerabilities, including critical ones that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for the issues addressed in this bulletin, other than CVE-2026-75650 which requires a separate hotfix."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
-      "published": "2026-08-18",
+      "title": "Security update available for Adobe Commerce (August 2026)",
+      "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This security update addresses critical, important, and moderate vulnerabilities, including an unauthenticated customer account takeover with a CVSS score of 9.1, arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of in-the-wild exploits for these specific issues."
-    },
-    {
-      "id": "CVE-2025-54236 (APSB25-88)",
-      "severity": "critical",
-      "title": "Action Required: Critical Security Update Available for Adobe Commerce",
-      "published": "2026-08-18",
-      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/security/action-required-critical-security-update-available-for-adobe-commerce-apsb25-88.html",
-      "summary": "This vulnerability allows an attacker to take over customer accounts through the Commerce REST API and has entered active exploitation. Adobe released a hotfix (VULN-32437-2-4-X-patch) to remediate this issue."
-    },
-    {
-      "id": "APSB26-73",
-      "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
-      "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for the issues addressed in this bulletin."
+      "summary": "This security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, security feature bypass, and privilege escalation. Adobe is not aware of any exploits in the wild for the issues addressed in these updates."
     },
     {
       "id": "CVE-2026-53787",
       "severity": "critical",
-      "title": "Unauthenticated file upload in Amasty Order Attributes for Magento",
+      "title": "Unauthenticated Arbitrary File Upload in Amasty Order Attributes",
       "published": "2026-06-12",
-      "url": "https://sansec.io/research/amasty-order-attributes-file-upload",
-      "summary": "An unauthenticated arbitrary file upload flaw in Amasty Order Attributes allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution. Sansec reported this vulnerability."
+      "url": "https://sansec.io/research/magento-vulnerabilities",
+      "summary": "An unauthenticated arbitrary file upload flaw in the Amasty Order Attributes extension allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution."
     },
     {
-      "id": "Mirasvit Cache Warmer PHP object injection",
+      "id": "N/A (Mirasvit Cache Warmer)",
       "severity": "critical",
-      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento",
+      "title": "Unauthenticated PHP Object Injection in Mirasvit Cache Warmer",
       "published": "2026-05-26",
-      "url": "https://sansec.io/research/mirasvit-cache-warmer-rce",
-      "summary": "Sansec discovered an unauthenticated PHP object injection flaw in Mirasvit Cache Warmer, a popular Magento extension, which can lead to remote code execution via a crafted cookie on any storefront page."
+      "url": "https://sansec.io/research/magento-vulnerabilities",
+      "summary": "Sansec discovered an unauthenticated PHP object injection flaw in the Mirasvit Cache Warmer extension, a popular Magento full-page cache extension."
     },
     {
-      "id": "APSB25-26",
-      "severity": "medium",
-      "title": "Security update available for Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb25-26.html",
-      "summary": "This security update resolves important and moderate vulnerabilities that could lead to security feature bypass, privilege escalation, and application denial-of-service. Adobe is not aware of any exploits in the wild for these issues."
+      "id": "N/A (Amasty Extensions)",
+      "severity": "critical",
+      "title": "Multiple Critical Vulnerabilities in Amasty Extensions",
+      "published": "2026-07-02",
+      "url": "https://sansec.io/research/magento-vulnerabilities",
+      "summary": "Amasty issued a massive security release for dozens of its Magento extensions, addressing two critical vulnerabilities that could lead to remote code execution."
     }
   ]
 }
