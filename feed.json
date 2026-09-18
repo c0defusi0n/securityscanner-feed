@@ -1,93 +1,117 @@
 {
-  "updated": "2026-09-18T11:18:37Z",
+  "updated": "2026-09-18T16:26:12Z",
   "items": [
     {
       "id": "APSB26-146 / CVE-2026-75650",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce | APSB26-146 (StyleSmuggler)",
       "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This update resolves a critical vulnerability (CVE-2026-75650) that could result in arbitrary code execution without authentication. Adobe is aware of this CVE being actively exploited in the wild, allowing attackers to run unauthorized commands and access sensitive information."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFl0uceFloTqa84DDyCTyxtyu3JeRPzS4f0BOcXzTQphMJklQ3lRRc0_E6iWRrWH7pIvzBFMjwPFBBffFQOp-Q7yvqt1A5ERqdaJlTMkaucS60QLtmnA5zWdaQJocg8qhBcqLqyzClfLnyBvGqnsyJTgUasQ0yIO_WzXujl",
+      "summary": "This critical zero-day vulnerability allows unauthenticated attackers to execute arbitrary code on affected Adobe Commerce and Magento Open Source installations and has been actively exploited in the wild. Adobe released an emergency hotfix (VULN-39341) to address the flaw, which has a CVSS score of 10.0."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce | APSB26-138",
       "published": "2026-09-08",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This security update resolves critical, important, and moderate vulnerabilities that could lead to security feature bypass and privilege escalation. Adobe recommends applying this update in addition to the hotfix for CVE-2026-75650."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfKF2Gw718W3erRV_PJSlG9b4cZvC09g3XjsvtPJNTTw5YATYCg1KZsTcR0WkZmo3EcSucTPpYUX8qJYka_LzOpiWQaOpcqdkQ57tcFsIMR60wNGPygVtOMWIMtFrLI54ty9eLQy5UqL0eIuamZKjgN854EXdeKqnyPyEbpScS",
+      "summary": "This security update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source. Successful exploitation could lead to security feature bypass and privilege escalation."
     },
     {
-      "id": "APSB26-92 / CVE-2026-71362",
+      "id": "CVE-2026-76200",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce - APSB26-92 (Unauthenticated Customer Account Takeover)",
+      "title": "Security Feature Bypass and Privilege Escalation (part of APSB26-138)",
+      "published": "2026-09-08",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfKF2Gw718W3erRV_PJSlG9b4cZvC09g3XjsvtPJNTTw5YATYCg1KZsTcR0WkZmo3EcSucTPpYUX8qJYka_LzOpiWQaOpcqdkQ57tcFsIMR60wNGPygVtOMWIMtFrLI54ty9eLQy5UqL0eIuamZKjgN854EXdeKqnyPyEbpScS",
+      "summary": "This critical vulnerability, addressed in APSB26-138, could lead to security feature bypass and privilege escalation in Adobe Commerce and Magento Open Source."
+    },
+    {
+      "id": "CVE-2026-76201",
+      "severity": "critical",
+      "title": "Security Feature Bypass and Privilege Escalation (part of APSB26-138)",
+      "published": "2026-09-08",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfKF2Gw718W3erRV_PJSlG9b4cZvC09g3XjsvtPJNTTw5YATYCg1KZsTcR0WkZmo3EcSucTPpYUX8qJYka_LzOpiWQaOpcqdkQ57tcFsIMR60wNGPygVtOMWIMtFrLI54ty9eLQy5UqL0eIuamZKjgN854EXdeKqnyPyEbpScS",
+      "summary": "This critical vulnerability, addressed in APSB26-138, could lead to security feature bypass and privilege escalation in Adobe Commerce and Magento Open Source."
+    },
+    {
+      "id": "CVE-2026-77109",
+      "severity": "critical",
+      "title": "Security Feature Bypass and Privilege Escalation (part of APSB26-138)",
+      "published": "2026-09-08",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfKF2Gw718W3erRV_PJSlG9b4cZvC09g3XjsvtPJNTTw5YATYCg1KZsTcR0WkZmo3EcSucTPpYUX8qJYka_LzOpiWQaOpcqdkQ57tcFsIMR60wNGPygVtOMWIMtFrLI54ty9eLQy5UqL0eIuamZKjgN854EXdeKqnyPyEbpScS",
+      "summary": "This critical vulnerability, addressed in APSB26-138, could lead to security feature bypass and privilege escalation in Adobe Commerce and Magento Open Source."
+    },
+    {
+      "id": "CVE-2026-77108",
+      "severity": "critical",
+      "title": "Security Feature Bypass and Privilege Escalation (part of APSB26-138)",
+      "published": "2026-09-08",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfKF2Gw718W3erRV_PJSlG9b4cZvC09g3XjsvtPJNTTw5YATYCg1KZsTcR0WkZmo3EcSucTPpYUX8qJYka_LzOpiWQaOpcqdkQ57tcFsIMR60wNGPygVtOMWIMtFrLI54ty9eLQy5UqL0eIuamZKjgN854EXdeKqnyPyEbpScS",
+      "summary": "This critical vulnerability, addressed in APSB26-138, could lead to security feature bypass and privilege escalation in Adobe Commerce and Magento Open Source."
+    },
+    {
+      "id": "CVE-2026-76202",
+      "severity": "critical",
+      "title": "Security Feature Bypass and Privilege Escalation (part of APSB26-138)",
+      "published": "2026-09-08",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfKF2Gw718W3erRV_PJSlG9b4cZvC09g3XjsvtPJNTTw5YATYCg1KZsTcR0WkZmo3EcSucTPpYUX8qJYka_LzOpiWQaOpcqdkQ57tcFsIMR60wNGPygVtOMWIMtFrLI54ty9eLQy5UqL0eIuamZKjgN854EXdeKqnyPyEbpScS",
+      "summary": "This critical vulnerability, addressed in APSB26-138, could lead to security feature bypass and privilege escalation in Adobe Commerce and Magento Open Source."
+    },
+    {
+      "id": "CVE-2025-24421 (APSB25-08)",
+      "severity": "critical",
+      "title": "Adobe Commerce Auth Bypass Vulnerability",
+      "published": "2026-09-08",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWlo9FfQbkdXZ3cIsIXDIMPzTxz-P9xqaa0V-ZFK_XhaYRh68wll_fg6ObcyTtioGwCDTW_1QtzviKuLz0Hh7qZukx7r_G0NACKEsvgEiqDFFbrNZCPbm_FtZzIGZwaPa9E8YLA0Egk4N0jQgxPHHvTVtWxmVCKY2eThFUlQ",
+      "summary": "This authorization bypass flaw in Adobe Commerce allows low-privileged authenticated attackers to bypass security features and read select data. It affects Adobe Commerce, Adobe Commerce B2B, and Magento Open Source."
+    },
+    {
+      "id": "APSB26-92",
+      "severity": "critical",
+      "title": "Apply updates to patch critical vulnerability in Adobe Commerce and Magento Open Source",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This update resolves critical and important vulnerabilities, including CVE-2026-71362, an unauthenticated customer account takeover with a CVSS score of 9.1. Successful exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwF-pEU6aDCeVTn_xV0gssqRtr4I37koDiJgjwgc8ZZrzhNvCvfrjLEnk21dWmoCeoX2j74Ge1Lr_gpdM2Y7Ad68sA8EO9SJf4hk-5bdl2ueRH-3TgMrU4WZsjzLYGSQu6Wh82wPK6jiHev2hSFYzlJFJyPS6a-Ooa0JMmvjJz_y6Q_sQ6HfaBNxqCWN4rIDFQjzlob3cqolID7FsxkfREqNxJwEtb5P3xzy5OKn-1orYTBpen5fuRa5tTCzs",
+      "summary": "Adobe released security updates to patch multiple vulnerabilities, including a critical one in Adobe Commerce that allows unauthenticated remote code execution and privilege escalation. Threat actors are attempting to exploit the critical vulnerability in the wild."
+    },
+    {
+      "id": "CVE-2026-71362",
+      "severity": "critical",
+      "title": "Incorrect Authorization Vulnerability (part of APSB26-92)",
+      "published": "2026-08-11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwF-pEU6aDCeVTn_xV0gssqRtr4I37koDiJgjwgc8ZZrzhNvCvfrjLEnk21dWmoCeoX2j74Ge1Lr_gpdM2Y7Ad68sA8EO9SJf4hk-5bdl2ueRH-3TgMrU4WZsjzLYGSQu6Wh82wPK6jiHev2hSFYzlJFJyPS6a-Ooa0JMmvjJz_y6Q_sQ6HfaBNxqCWN4rIDFQjzlob3cqolID7FsxkfREqNxJwEtb5P3xzy5OKn-1orYTBpen5fuRa5tTCzs",
+      "summary": "This critical vulnerability, addressed in APSB26-92, allows an unauthenticated remote attacker to switch a customer session to another customer account and escalate privileges. It has a CVSS score of 9.1."
     },
     {
       "id": "CVE-2026-48413",
       "severity": "high",
-      "title": "Stored Cross-Site Scripting vulnerability",
+      "title": "Stored Cross-Site Scripting (XSS) (part of APSB26-92)",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "Part of APSB26-92, this high-severity stored cross-site scripting vulnerability could result in arbitrary code execution. Exploitation requires authentication but not administrator privileges."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwF-pEU6aDCeVTn_xV0gssqRtr4I37koDiJgjwgc8ZZrzhNvCvfrjLEnk21dWmoCeoX2j74Ge1Lr_gpdM2Y7Ad68sA8EO9SJf4hk-5bdl2ueRH-3TgMrU4WZsjzLYGSQu6Wh82wPK6jiHev2hSFYzlJFJyPS6a-Ooa0JMmvjJz_y6Q_sQ6HfaBNxqCWN4rIDFQjzlob3cqolID7FsxkfREqNxJwEtb5P3xzy5OKn-1orYTBpen5fuRa5tTCzs",
+      "summary": "This high-severity stored XSS vulnerability, addressed in APSB26-92, could result in arbitrary code execution. Exploitation requires authentication but not administrator privileges."
     },
     {
       "id": "CVE-2026-48414",
       "severity": "high",
-      "title": "Stored Cross-Site Scripting vulnerability",
+      "title": "Stored Cross-Site Scripting (XSS) (part of APSB26-92)",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "Addressed in APSB26-92, this high-severity stored cross-site scripting vulnerability could result in arbitrary code execution. Exploitation requires authentication and administrator privileges."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwF-pEU6aDCeVTn_xV0gssqRtr4I37koDiJgjwgc8ZZrzhNvCvfrjLEnk21dWmoCeoX2j74Ge1Lr_gpdM2Y7Ad68sA8EO9SJf4hk-5bdl2ueRH-3TgMrU4WZsjzLYGSQu6Wh82wPK6jiHev2hSFYzlJFJyPS6a-Ooa0JMmvjJz_y6Q_sQ6HfaBNxqCWN4rIDFQjzlob3cqolID7FsxkfREqNxJwEtb5P3xzy5OKn-1orYTBpen5fuRa5tTCzs",
+      "summary": "This high-severity stored XSS vulnerability, addressed in APSB26-92, could result in arbitrary code execution. Exploitation requires authentication and administrator privileges."
     },
     {
       "id": "CVE-2026-48415",
       "severity": "high",
-      "title": "Incorrect-authorization vulnerability (Adobe Commerce B2B)",
+      "title": "Incorrect Authorization Vulnerability in Adobe Commerce B2B (part of APSB26-92)",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This high-severity incorrect-authorization vulnerability, affecting Adobe Commerce B2B and covered by APSB26-92, could enable a security-feature bypass."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwF-pEU6aDCeVTn_xV0gssqRtr4I37koDiJgjwgc8ZZrzhNvCvfrjLEnk21dWmoCeoX2j74Ge1Lr_gpdM2Y7Ad68sA8EO9SJf4hk-5bdl2ueRH-3TgMrU4WZsjzLYGSQu6Wh82wPK6jiHev2hSFYzlJFJyPS6a-Ooa0JMmvjJz_y6Q_sQ6HfaBNxqCWN4rIDFQjzlob3cqolID7FsxkfREqNxJwEtb5P3xzy5OKn-1orYTBpen5fuRa5tTCzs",
+      "summary": "This high-severity incorrect authorization vulnerability, addressed in APSB26-92, affects Adobe Commerce B2B and could enable a security-feature bypass. Exploitation requires authentication."
     },
     {
       "id": "CVE-2026-48416",
       "severity": "high",
-      "title": "Incorrect-authorization vulnerability",
+      "title": "Incorrect Authorization Vulnerability (part of APSB26-92)",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "Included in APSB26-92, this high-severity incorrect-authorization vulnerability could enable a security-feature bypass and requires neither authentication nor administrator privileges."
-    },
-    {
-      "id": "APSB25-26",
-      "severity": "medium",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb25-26.html",
-      "summary": "This update resolves important and moderate vulnerabilities that could lead to security feature bypass, privilege escalation, and application denial-of-service. Adobe is not aware of any exploits in the wild for these issues."
-    },
-    {
-      "id": "APSB25-94",
-      "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb25-94.html",
-      "summary": "This security update resolves critical and important vulnerabilities. Successful exploitation could lead to security feature bypass, privilege escalation, and arbitrary code execution."
-    },
-    {
-      "id": "CVE-2026-48411",
-      "severity": "medium",
-      "title": "Incorrect-authorization vulnerability",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "Part of APSB26-92, this medium-severity incorrect-authorization vulnerability could enable a security-feature bypass. Exploitation requires authentication and administrator privileges."
-    },
-    {
-      "id": "CVE-2026-48412",
-      "severity": "low",
-      "title": "Incorrect-authorization vulnerability",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "Addressed in APSB26-92, this low-severity incorrect-authorization vulnerability could result in privilege escalation. Exploitation requires authentication and administrator privileges."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwF-pEU6aDCeVTn_xV0gssqRtr4I37koDiJgjwgc8ZZrzhNvCvfrjLEnk21dWmoCeoX2j74Ge1Lr_gpdM2Y7Ad68sA8EO9SJf4hk-5bdl2ueRH-3TgMrU4WZsjzLYGSQu6Wh82wPK6jiHev2hSFYzlJFJyPS6a-Ooa0JMmvjJz_y6Q_sQ6HfaBNxqCWN4rIDFQjzlob3cqolID7FsxkfREqNxJwEtb5P3xzy5OKn-1orYTBpen5fuRa5tTCzs",
+      "summary": "This high-severity incorrect authorization vulnerability, addressed in APSB26-92, could enable a security-feature bypass. It requires neither authentication nor administrator privileges."
     }
   ]
 }
