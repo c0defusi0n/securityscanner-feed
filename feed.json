@@ -1,37 +1,45 @@
 {
-  "updated": "2026-09-23T17:04:03Z",
+  "updated": "2026-09-23T21:31:35Z",
   "items": [
     {
-      "id": "CVE-2026-75650 (APSB26-146)",
+      "id": "CVE-2026-75650",
       "severity": "critical",
-      "title": "StyleSmuggler: Unauthenticated Remote Code Execution",
+      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
+      "published": "2026-09-07",
+      "url": "https://sansec.io/research/stylesmuggler-magento-0-day-rce",
+      "summary": "A zero-day vulnerability in Magento Open Source and Adobe Commerce, named StyleSmuggler, allows unauthenticated attackers to achieve remote code execution. Attacks started on September 4th, 2026, and Adobe released an emergency hotfix (APSB26-146) on September 7th, 2026."
+    },
+    {
+      "id": "APSB26-146",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce (Hotfix for CVE-2026-75650)",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This critical vulnerability allows unauthenticated attackers to execute arbitrary code on affected Adobe Commerce and Magento Open Source installations. Adobe is aware of active exploitation in the wild, and an emergency hotfix (VULN-39341) has been released."
+      "summary": "Adobe released a critical security update (hotfix VULN-39341) for Adobe Commerce and Magento Open Source to address CVE-2026-75650, an actively exploited vulnerability leading to arbitrary code execution. This hotfix is separate from the regular September security update."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Security update available for Adobe Commerce",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities, including issues that could lead to security feature bypass and privilege escalation. Adobe recommends applying this update in addition to the hotfix for CVE-2026-75650."
+      "summary": "A regularly scheduled security update for Adobe Commerce and Magento Open Source resolves critical, important, and moderate vulnerabilities. Successful exploitation could lead to security feature bypass and privilege escalation."
+    },
+    {
+      "id": "CVE-2026-71362",
+      "severity": "critical",
+      "title": "Unauthenticated Customer Account Takeover",
+      "published": "2026-08-11",
+      "url": "https://sansec.io/research/adobe-patches-critical-magento-account-takeover-apsb26-92",
+      "summary": "This critical vulnerability, part of APSB26-92, allows an unauthenticated attacker to take over a customer account with a CVSS score of 9.1. Exploitation requires no existing account, administrator privileges, or user interaction."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
-      "published": "2026-08-18",
+      "title": "Security update available for Adobe Commerce",
+      "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This security update addresses critical, important, and moderate vulnerabilities, including those that could result in security feature bypass, arbitrary code execution, and privilege escalation. One notable fix includes an unauthenticated customer account takeover with a CVSS score of 9.1."
-    },
-    {
-      "id": "CVE-2026-48356 (APSB26-73)",
-      "severity": "critical",
-      "title": "Adobe Commerce RCE Vulnerability via Unrestricted File Upload",
-      "published": "2026-07-20",
-      "url": "https://www.sentinelone.com/labs/cve-2026-48356-adobe-commerce-rce-vulnerability/",
-      "summary": "This critical remote code execution vulnerability in Adobe Commerce, Adobe Commerce B2B, and Magento Open Source is caused by unrestricted file upload with dangerous types. Attackers can exploit this flaw to inject malicious scripts and achieve arbitrary code execution."
+      "summary": "Adobe released isolated patch files for Adobe Commerce and Magento Open Source, addressing seven vulnerabilities, including the critical unauthenticated customer account takeover (CVE-2026-71362). Successful exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation."
     }
   ]
 }
