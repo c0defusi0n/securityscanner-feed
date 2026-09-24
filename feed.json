@@ -1,13 +1,13 @@
 {
-  "updated": "2026-09-24T11:49:10Z",
+  "updated": "2026-09-24T17:13:40Z",
   "items": [
     {
-      "id": "APSB26-146 / CVE-2026-75650",
+      "id": "CVE-2026-75650 (APSB26-146)",
       "severity": "critical",
-      "title": "Adobe Commerce and Magento Open Source Zero-Day RCE (StyleSmuggler)",
+      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This critical vulnerability allows unauthenticated attackers to execute arbitrary code on affected installations and has been actively exploited in the wild. Adobe released an emergency hotfix to address this zero-day flaw."
+      "summary": "Sansec discovered StyleSmuggler, a Magento and Adobe Commerce zero-day that allows unauthenticated attackers to achieve remote code execution. Adobe released an emergency hotfix for this critical vulnerability, which is being actively exploited in the wild."
     },
     {
       "id": "APSB26-138",
@@ -15,71 +15,15 @@
       "title": "Security update available for Adobe Commerce and Magento Open Source",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities, including two high-severity stored cross-site scripting issues that do not require authentication and could lead to arbitrary code execution."
+      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass. It includes fixes for CVE-2026-76200, CVE-2026-76201, CVE-2026-77109, CVE-2026-77108, and CVE-2026-76202."
     },
     {
-      "id": "APSB26-92 / CVE-2026-71362",
+      "id": "APSB26-92",
       "severity": "critical",
-      "title": "Critical Vulnerability in Adobe Commerce and Magento Open Source (Unauthenticated Privilege Escalation)",
+      "title": "Security update available for Adobe Commerce and Magento Open Source",
       "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This critical vulnerability allows an unauthenticated remote attacker to switch a customer session to another customer account and escalate privileges without requiring administrator access. Indications suggest active exploitation in the wild."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48414",
-      "severity": "high",
-      "title": "Stored Cross-Site Scripting Vulnerability in Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution. Exploitation requires authentication and administrator privileges."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48413",
-      "severity": "high",
-      "title": "Stored Cross-Site Scripting Vulnerability in Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution. It requires authentication but not administrator privileges."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48415",
-      "severity": "high",
-      "title": "Incorrect Authorization Vulnerability in Adobe Commerce B2B",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity incorrect-authorization vulnerability affecting Adobe Commerce B2B that could enable a security-feature bypass. It requires authentication but not administrator privileges."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48416",
-      "severity": "high",
-      "title": "Incorrect Authorization Vulnerability in Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity incorrect-authorization vulnerability that could enable a security-feature bypass. It requires neither authentication nor administrator privileges."
-    },
-    {
-      "id": "APSB26-73 / CVE-2026-48356",
-      "severity": "critical",
-      "title": "Adobe Commerce RCE Vulnerability (Unrestricted File Upload)",
-      "published": "2026-07-20",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "A critical remote code execution vulnerability in Adobe Commerce caused by unrestricted file upload with dangerous types. Attackers can execute arbitrary code by uploading malicious files."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48411",
-      "severity": "medium",
-      "title": "Incorrect Authorization Vulnerability in Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A medium-severity incorrect-authorization vulnerability that could enable a security-feature bypass. Exploitation requires authentication and administrator privileges."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48412",
-      "severity": "low",
-      "title": "Incorrect Authorization Vulnerability in Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A low-severity incorrect-authorization vulnerability that could result in privilege escalation. Exploitation requires authentication and administrator privileges."
+      "summary": "This update addresses critical and important vulnerabilities, including an unauthenticated authorization flaw (CVE-2026-71362) that could lead to elevated access, and several stored cross-site scripting (XSS) vulnerabilities (CVE-2026-48414, CVE-2026-48413). Successful exploitation could result in arbitrary code execution, security feature bypass, and privilege escalation."
     }
   ]
 }
