@@ -1,29 +1,109 @@
 {
-  "updated": "2026-09-24T17:13:40Z",
+  "updated": "2026-09-24T21:32:50Z",
   "items": [
     {
-      "id": "CVE-2026-75650 (APSB26-146)",
+      "id": "CVE-2026-75650 (StyleSmuggler)",
       "severity": "critical",
-      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
+      "title": "Unauthenticated Remote Code Execution (RCE) via StyleSmuggler",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "Sansec discovered StyleSmuggler, a Magento and Adobe Commerce zero-day that allows unauthenticated attackers to achieve remote code execution. Adobe released an emergency hotfix for this critical vulnerability, which is being actively exploited in the wild."
+      "summary": "A critical zero-day vulnerability allowing unauthenticated attackers to execute arbitrary code on affected Adobe Commerce and Magento Open Source installations. This flaw, dubbed 'StyleSmuggler' by Sansec, was actively exploited in the wild starting September 4, 2026."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Security update available for Adobe Commerce",
       "published": "2026-09-08",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass. It includes fixes for CVE-2026-76200, CVE-2026-76201, CVE-2026-77109, CVE-2026-77108, and CVE-2026-76202."
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-138.html",
+      "summary": "A regularly scheduled security update for Adobe Commerce and Magento Open Source resolving critical, important, and moderate vulnerabilities. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
+    },
+    {
+      "id": "Fishpig Vendor Hack",
+      "severity": "high",
+      "title": "Magento vendor Fishpig hacked, backdoors added",
+      "published": "2026-09-13",
+      "url": "https://sansec.io/research",
+      "summary": "Sansec reported that Fishpig, a vendor of popular Magento-Wordpress integrations, was hacked, leading to malware injection in Fishpig software and control of Fishpig servers. This constitutes a supply chain attack affecting Magento users."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Security update available for Adobe Commerce",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This update addresses critical and important vulnerabilities, including an unauthenticated authorization flaw (CVE-2026-71362) that could lead to elevated access, and several stored cross-site scripting (XSS) vulnerabilities (CVE-2026-48414, CVE-2026-48413). Successful exploitation could result in arbitrary code execution, security feature bypass, and privilege escalation."
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A regularly scheduled security update for Adobe Commerce and Magento Open Source, addressing critical and important vulnerabilities. Exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation."
+    },
+    {
+      "id": "CVE-2026-71362",
+      "severity": "critical",
+      "title": "Incorrect Authorization leading to Unauthenticated Remote Code Execution and Privilege Escalation",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A critical vulnerability allowing an unauthenticated remote attacker to switch a customer session to another customer account and escalate privileges without requiring administrator access. Indications emerged that threat actors were attempting to exploit this vulnerability in the wild."
+    },
+    {
+      "id": "CVE-2026-48413",
+      "severity": "high",
+      "title": "Stored Cross-Site Scripting (XSS) leading to Arbitrary Code Execution",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution. Exploitation requires authentication but not administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48414",
+      "severity": "high",
+      "title": "Stored Cross-Site Scripting (XSS) leading to Arbitrary Code Execution",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution. Exploitation requires authentication and administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48415",
+      "severity": "high",
+      "title": "Incorrect Authorization in Adobe Commerce B2B leading to Security-Feature Bypass",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A high-severity incorrect authorization vulnerability affecting Adobe Commerce B2B that could enable a security-feature bypass. Exploitation requires authentication but not administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48416",
+      "severity": "high",
+      "title": "Incorrect Authorization leading to Security-Feature Bypass",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A high-severity incorrect authorization vulnerability that could enable a security-feature bypass. Exploitation requires neither authentication nor administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48411",
+      "severity": "medium",
+      "title": "Incorrect Authorization leading to Security-Feature Bypass",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A medium-severity incorrect authorization vulnerability that could enable a security-feature bypass. Exploitation requires authentication and administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48412",
+      "severity": "low",
+      "title": "Incorrect Authorization leading to Privilege Escalation",
+      "published": "2026-08-11",
+      "url": "https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/security/security-update-available-for-adobe-commerce-apsb26-92.html",
+      "summary": "A low-severity incorrect authorization vulnerability that could result in privilege escalation. Exploitation requires authentication and administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48358",
+      "severity": "critical",
+      "title": "Remote Code Execution (RCE) via Improper Encoding",
+      "published": "2026-07-20",
+      "url": "https://www.sentinelone.com/labs/cve-2026-48358-adobe-commerce-rce-vulnerability/",
+      "summary": "A critical RCE vulnerability in Adobe Commerce caused by improper encoding, enabling arbitrary code execution without user interaction. The flaw is network-exploitable and requires no authentication."
+    },
+    {
+      "id": "Amasty Extension Vulnerabilities",
+      "severity": "critical",
+      "title": "Critical Remote Code Execution (RCE) in Amasty Extensions",
+      "published": "2026-07-02",
+      "url": "https://sansec.io/research",
+      "summary": "Amasty issued a massive security release for dozens of its Magento extensions, including two critical vulnerabilities that could lead to remote code execution."
     }
   ]
 }
