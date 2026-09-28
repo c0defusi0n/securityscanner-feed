@@ -1,45 +1,37 @@
 {
-  "updated": "2026-09-28T13:59:49Z",
+  "updated": "2026-09-28T23:18:22Z",
   "items": [
     {
       "id": "APSB26-146 / CVE-2026-75650",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce | APSB26-146 (StyleSmuggler)",
+      "title": "Security update available for Adobe Commerce (Arbitrary Code Execution)",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This critical zero-day code injection vulnerability, dubbed 'StyleSmuggler,' allows unauthenticated attackers to execute arbitrary code on affected Adobe Commerce and Magento Open Source installations and has been actively exploited in the wild."
+      "summary": "This critical vulnerability allows unauthenticated attackers to execute arbitrary code on affected Adobe Commerce and Magento Open Source installations. Adobe is aware of active exploitation in the wild, with attacks starting as early as September 4th, 2026."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce - APSB26-138",
+      "title": "Security update available for Adobe Commerce (Multiple vulnerabilities)",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "A regularly scheduled security update for Adobe Commerce and Magento Open Source, resolving critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass."
+      "summary": "This regularly scheduled security update for Adobe Commerce and Magento Open Source resolves critical, important, and moderate vulnerabilities, including arbitrary code execution, privilege escalation, and security feature bypass. Adobe is not aware of any exploits in the wild for these specific issues."
     },
     {
       "id": "APSB26-92 / CVE-2026-71362",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce - APSB26-92 (Customer Account Takeover)",
+      "title": "Security update available for Adobe Commerce (Customer Account Takeover and other vulnerabilities)",
       "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This update addresses an unauthenticated customer account takeover vulnerability (CVE-2026-71362) that allows attackers to gain elevated access to sensitive resources without user interaction, and has been added to CISA's KEV catalog."
+      "summary": "This security update addresses several vulnerabilities, including a critical unauthenticated customer account takeover (CVE-2026-71362) with a CVSS score of 9.1. This flaw allows attackers to gain elevated access to sensitive resources without user interaction, and CISA has added it to its Known Exploited Vulnerabilities catalog."
     },
     {
-      "id": "CVE-2026-53787",
+      "id": "APSB25-71",
       "severity": "critical",
-      "title": "Unauthenticated file upload in Amasty Order Attributes for Magento",
-      "published": "2026-06-12",
-      "url": "https://sansec.io/research/unauthenticated-file-upload-amasty-order-attributes-magento",
-      "summary": "An unauthenticated arbitrary file upload flaw in the Amasty Order Attributes extension allows attackers to write executable files to a Magento store without logging in, potentially leading to remote code execution."
-    },
-    {
-      "id": "N/A (Mirasvit Cache Warmer)",
-      "severity": "critical",
-      "title": "Critical vulnerability in Mirasvit Cache Warmer for Magento",
-      "published": "2026-05-26",
-      "url": "https://sansec.io/research/critical-vulnerability-mirasvit-cache-warmer-magento",
-      "summary": "An unauthenticated PHP object injection flaw was found in the popular Mirasvit Cache Warmer extension for Magento."
+      "title": "Security update available for Adobe Commerce (Multiple vulnerabilities)",
+      "published": "2026-08-11",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
+      "summary": "This security update for Adobe Commerce and Magento Open Source resolves critical and important vulnerabilities that could lead to security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service. Adobe is not aware of any exploits in the wild for these issues."
     }
   ]
 }
