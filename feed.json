@@ -1,69 +1,61 @@
 {
-  "updated": "2026-10-01T22:42:52Z",
+  "updated": "2026-10-02T05:41:17Z",
   "items": [
     {
       "id": "CVE-2026-75650",
       "severity": "critical",
-      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
+      "title": "StyleSmuggler: Magento and Adobe Commerce 0-day RCE under active attack",
+      "published": "2026-09-07",
+      "url": "https://sansec.io/research/stylesmuggler-magento-adobe-commerce-0-day-rce-cve-2026-75650-under-active-attack",
+      "summary": "A zero-day vulnerability allowing unauthenticated attackers to achieve remote code execution by injecting malicious code into Magento's template system. Adobe released an emergency hotfix (APSB26-146) on September 7, 2026, with a CVSS score of 10.0."
+    },
+    {
+      "id": "APSB26-146",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce | APSB26-146",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "A critical zero-day vulnerability in Adobe Commerce and Magento Open Source that allows unauthenticated attackers to achieve remote code execution. This flaw, codenamed StyleSmuggler by Sansec, was actively exploited in the wild and patched with an emergency hotfix."
+      "summary": "This Adobe Security Bulletin addresses a critical vulnerability (CVE-2026-75650) in Adobe Commerce and Magento Open Source that could result in arbitrary code execution. Adobe is aware of this CVE being exploited in the wild."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Security update available for Adobe Commerce | APSB26-138",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities, including issues that could lead to arbitrary code execution, privilege escalation, and security feature bypass. Adobe recommends applying the updates promptly."
+      "summary": "A regularly scheduled security update for Adobe Commerce and Magento Open Source resolving critical, important, and moderate vulnerabilities. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
     },
     {
       "id": "CVE-2026-71362",
       "severity": "critical",
-      "title": "Incorrect Authorization leading to Unauthenticated Customer Account Takeover",
+      "title": "Incorrect Authorization Account Takeover in Adobe Commerce",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A critical incorrect authorization flaw (CVSS 9.1) in Adobe Commerce, Adobe Commerce B2B, and Magento Open Source that allows unauthenticated attackers to gain elevated access to sensitive resources, leading to customer account takeover. This vulnerability was included in APSB26-92 and added to the CISA KEV catalog due to active exploitation."
+      "url": "https://www.rescana.com/blog/active-exploitation-alert-adobe-commerce-magento-incorrect-authorization-account-takeover-cve-2026-71362-added-to-cisa-kev/",
+      "summary": "A critical Incorrect Authorization flaw (CVSS 9.1) in Adobe Commerce, Adobe Commerce B2B, and Magento Open Source, enabling unauthenticated customer account takeover. This vulnerability was fixed as part of APSB26-92 and added to the CISA KEV catalog on September 24, 2026."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce and Magento Open Source",
+      "title": "Security update available for Adobe Commerce | APSB26-92",
       "published": "2026-08-11",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This security update addresses critical, important, and moderate vulnerabilities, including arbitrary code execution, security feature bypass, and privilege escalation. It encompasses CVE-2026-71362 and other high-severity issues."
+      "summary": "Adobe released a security update for Adobe Commerce and Magento Open Source, resolving critical and important vulnerabilities. This includes an unauthenticated customer account takeover (CVE-2026-71362) with a CVSS score of 9.1."
     },
     {
-      "id": "CVE-2026-48413",
-      "severity": "high",
-      "title": "Stored Cross-Site Scripting (XSS)",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution. Exploitation requires authentication but not administrator privileges. This was addressed in APSB26-92."
+      "id": "PolyShell (no CVE yet)",
+      "severity": "critical",
+      "title": "PolyShell: Unauthenticated Remote Code Execution via unrestricted file upload",
+      "published": "2026-03-26",
+      "url": "https://infiniroot.com/blog/vulnerable-magento-adobe-commerce-stores-worldwide-attacked-through-polyshell-and-sessionreaper-exploits",
+      "summary": "A very new vulnerability allowing unauthenticated attackers to upload fake image files containing executable code, leading to remote code execution. As of March 2026, there was no official fix, only a pre-release of the 2.4.9 branch contained a fix."
     },
     {
-      "id": "CVE-2026-48414",
-      "severity": "high",
-      "title": "Stored Cross-Site Scripting (XSS)",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity stored cross-site scripting vulnerability that could result in arbitrary code execution. Exploitation requires authentication and administrator privileges. This was addressed in APSB26-92."
-    },
-    {
-      "id": "CVE-2026-48416",
-      "severity": "high",
-      "title": "Incorrect Authorization leading to Security Feature Bypass",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity incorrect authorization vulnerability that could enable a security-feature bypass. This vulnerability requires neither authentication nor administrator privileges and was addressed in APSB26-92."
-    },
-    {
-      "id": "CVE-2026-48415",
-      "severity": "high",
-      "title": "Incorrect Authorization affecting Adobe Commerce B2B",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "A high-severity incorrect authorization vulnerability specifically affecting Adobe Commerce B2B, which could enable a security-feature bypass. This was addressed as part of APSB26-92."
+      "id": "CVE-2025-54236",
+      "severity": "critical",
+      "title": "SessionReaper: Unauthenticated RCE in Magento & Adobe Commerce",
+      "published": "2025-09-09",
+      "url": "https://sansec.io/research/sessionreaper-unauthenticated-rce-in-magento-adobe-commerce-cve-2025-54236",
+      "summary": "A critical bug (CVSS 9.1) allowing customer account takeover and unauthenticated remote code execution under certain conditions. Adobe released an emergency fix (APSB25-88) in September 2025, but mass exploitation was observed starting October 22, 2025, and continued into March 2026."
     }
   ]
 }
