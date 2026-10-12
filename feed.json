@@ -1,29 +1,69 @@
 {
-  "updated": "2026-10-11T12:54:02Z",
+  "updated": "2026-10-12T15:30:37Z",
   "items": [
     {
-      "id": "APSB26-146",
+      "id": "CVE-2026-75650 / APSB26-146",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce (StyleSmuggler)",
+      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
       "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/commerce/apsb26-146.html",
-      "summary": "This update resolves a critical zero-day vulnerability (CVE-2026-75650), dubbed StyleSmuggler, allowing unauthenticated remote code execution. Adobe is aware of active exploitation in the wild targeting Adobe Commerce merchants."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
+      "summary": "This zero-day vulnerability allows unauthenticated attackers to achieve remote code execution by injecting malicious code into Magento's template system via the /graphql endpoint. Adobe released an emergency hotfix due to active exploitation in the wild."
     },
     {
-      "id": "APSB26-92",
+      "id": "APSB26-138",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce",
+      "published": "2026-09-08",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
+      "summary": "This security update resolves critical, important, and moderate vulnerabilities in Adobe Commerce and Magento Open Source, which could lead to security feature bypass and privilege escalation. Adobe recommends applying these updates in addition to the hotfix for CVE-2026-75650."
+    },
+    {
+      "id": "CVE-2026-71362 (part of APSB26-92)",
+      "severity": "critical",
+      "title": "Incorrect Authorization leading to Privilege Escalation / Customer Account Takeover",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/commerce/apsb26-92.html",
-      "summary": "This bulletin addresses multiple critical and important vulnerabilities, including CVE-2026-71362 (critical incorrect authorization leading to privilege escalation) and several high-severity cross-site scripting and incorrect authorization issues. Successful exploitation could lead to arbitrary code execution, security feature bypass, and privilege escalation."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
+      "summary": "This critical vulnerability allows an unauthenticated remote attacker to switch a customer session to another customer account and escalate privileges without requiring administrator access. It was part of the APSB26-92 security update and has seen indications of exploitation in the wild."
     },
     {
-      "id": "APSB26-73",
+      "id": "CVE-2026-48414, CVE-2026-48413, CVE-2026-48415, CVE-2026-48416",
+      "severity": "high",
+      "title": "Multiple High Severity Vulnerabilities (XSS, Incorrect Authorization)",
+      "published": "2026-08-11",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
+      "summary": "These high-severity vulnerabilities, addressed in APSB26-92, include stored cross-site scripting (XSS) that could lead to arbitrary code execution and incorrect authorization flaws enabling security feature bypass. Exploitation may or may not require authentication or administrator privileges depending on the specific CVE."
+    },
+    {
+      "id": "Amasty Critical Vulnerabilities",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
-      "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/commerce/apsb26-73.html",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities, notably CVE-2026-48358, a critical improper encoding vulnerability leading to unauthenticated arbitrary code execution. Other issues include privilege escalation and security feature bypass."
+      "title": "Multiple Critical Vulnerabilities in Amasty Extensions",
+      "published": "2026-07-02",
+      "url": "https://sansec.io/research/amasty-patches-dozens-of-magento-extensions-2-critical",
+      "summary": "Amasty released a massive security update for dozens of its Magento extensions, addressing two critical vulnerabilities that could lead to remote code execution."
+    },
+    {
+      "id": "CVE-2026-53787",
+      "severity": "critical",
+      "title": "Unauthenticated Arbitrary File Upload in Amasty Order Attributes",
+      "published": "2026-06-12",
+      "url": "https://sansec.io/research/unauthenticated-file-upload-in-amasty-order-attributes-for-magento",
+      "summary": "This critical vulnerability allows unauthenticated attackers to upload executable files to a Magento store via the Amasty Order Attributes extension, potentially leading to remote code execution."
+    },
+    {
+      "id": "CVE-2025-54236 / APSB25-88",
+      "severity": "critical",
+      "title": "SessionReaper: Unauthenticated Remote Code Execution and Session Takeover",
+      "published": "2025-09-01",
+      "url": "https://sansec.io/research/sessionreaper-unauthenticated-rce-in-magento-adobe-commerce-cve-2025-54236",
+      "summary": "This critical vulnerability in Magento / Adobe Commerce allows for session takeover and, in some cases, unauthenticated remote code execution. Although a patch was released in September 2025, active exploitation was observed in March 2026 and mentioned as ongoing in September 2026."
+    },
+    {
+      "id": "PolyShell",
+      "severity": "critical",
+      "title": "PolyShell: Unrestricted File Upload leading to Remote Code Execution",
+      "published": "2026-03-01",
+      "url": "https://sansec.io/research/polyshell-unrestricted-file-upload-in-magento-and-adobe-commerce",
+      "summary": "PolyShell is an unauthenticated file upload vulnerability in Magento and Adobe Commerce that allows attackers to upload executable files via the REST API, leading to remote code execution. Active exploitation was observed in March 2026, and no official patch was available at that time."
     }
   ]
 }
