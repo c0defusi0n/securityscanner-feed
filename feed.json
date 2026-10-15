@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T04:43:11Z",
+  "updated": "2026-10-15T11:32:48Z",
   "items": [
     {
       "id": "APSB26-153",
@@ -7,15 +7,15 @@
       "title": "Security update available for Adobe Commerce",
       "published": "2026-10-13",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This update addresses multiple vulnerabilities rated critical, high, and medium, which could lead to arbitrary code execution, privilege escalation, arbitrary file system write, and security feature bypass. It includes CVE-2026-103849 (Improper Neutralization of Special Elements), CVE-2026-92909 (Incorrect Authorization), and several XSS vulnerabilities."
+      "summary": "This update resolves critical, high, and medium vulnerabilities that could lead to arbitrary code execution, privilege escalation, arbitrary file system write, and security feature bypass. It includes fixes for CVE-2026-103849, CVE-2026-92909, and multiple Cross-site Scripting issues."
     },
     {
-      "id": "APSB26-146 / CVE-2026-75650",
+      "id": "CVE-2026-75650 (APSB26-146)",
       "severity": "critical",
-      "title": "StyleSmuggler: Magento and Adobe Commerce 0-day RCE (CVE-2026-75650) under active attack",
+      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
       "published": "2026-09-07",
-      "url": "https://sansec.io/research/stylesmuggler-magento-0day-rce-cve-2026-75650",
-      "summary": "This zero-day vulnerability allows unauthenticated attackers to achieve remote code execution by injecting malicious code into Magento's template system, and it has been actively exploited in the wild. Adobe released an emergency hotfix for this critical flaw, rated CVSS 10.0."
+      "url": "https://sansec.io/research/stylesmuggler-magento-0-day-rce",
+      "summary": "This critical zero-day vulnerability (CVSS 10.0), also known as StyleSmuggler, allows unauthenticated attackers to achieve remote code execution by injecting malicious code into Magento's template system. It was under active exploitation before a hotfix was released."
     },
     {
       "id": "APSB26-138",
@@ -23,31 +23,23 @@
       "title": "Security update available for Adobe Commerce",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities that could result in security feature bypass and privilege escalation. It includes CVE-2026-76200 (Cross-site Scripting), CVE-2026-77111 (Incorrect Authorization), and CVE-2026-77108 (Path Traversal)."
+      "summary": "This security update addresses critical, important, and moderate vulnerabilities, including multiple Cross-site Scripting (CVE-2026-76200, CVE-2026-76201) and Incorrect Authorization (CVE-2026-77111, CVE-2026-77109, CVE-2026-77774, CVE-2026-76202) flaws, and a Path Traversal vulnerability (CVE-2026-77110). Successful exploitation could lead to security feature bypass and privilege escalation."
     },
     {
-      "id": "APSB26-92 / CVE-2026-71362",
+      "id": "APSB26-92",
       "severity": "critical",
       "title": "Adobe patches critical Magento account takeover",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This bulletin addresses seven vulnerabilities, including a critical one (CVE-2026-71362) that allows unauthenticated remote attackers to switch customer sessions and escalate privileges, with indications of active exploitation. The critical vulnerability has a CVSS score of 9.1."
+      "url": "https://sansec.io/research/adobe-patches-critical-magento-account-takeover-apsb26-92",
+      "summary": "This bulletin fixes seven vulnerabilities, including a critical unauthenticated customer account takeover (CVE-2026-71362) with a CVSS score of 9.1. Exploitation requires no existing account, administrator privileges, or user interaction."
     },
     {
-      "id": "APSB25-71",
+      "id": "CVE-2026-71362",
       "severity": "critical",
-      "title": "Adobe Security Bulletin APSB25-71",
+      "title": "Unauthenticated Customer Account Takeover",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
-      "summary": "This update resolves critical and important vulnerabilities that could lead to security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service. Adobe was not aware of any exploits in the wild for the issues addressed in this update."
-    },
-    {
-      "id": "APSB26-73 / CVE-2026-48358",
-      "severity": "critical",
-      "title": "CVE-2026-48358: Adobe Commerce RCE Vulnerability",
-      "published": "2026-07-20",
-      "url": "https://www.sentinelone.com/labs/cve-2026-48358-adobe-commerce-rce-vulnerability/",
-      "summary": "This is an RCE vulnerability in Adobe Commerce caused by improper encoding, enabling arbitrary code execution without user interaction or authentication. Successful exploitation can lead to full storefront compromise, payment data theft, and lateral movement."
+      "url": "https://sansec.io/research/adobe-patches-critical-magento-account-takeover-apsb26-92",
+      "summary": "Part of APSB26-92, this vulnerability allows an unauthenticated attacker to switch a customer session to another customer account, gaining access to the victim's account and private data. It has a CVSS score of 9.1."
     }
   ]
 }
