@@ -1,125 +1,93 @@
 {
-  "updated": "2026-10-18T20:47:00Z",
+  "updated": "2026-10-19T04:44:02Z",
   "items": [
     {
       "id": "APSB26-153",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce",
       "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This update addresses multiple critical, high, and medium vulnerabilities that could lead to arbitrary code execution, privilege escalation, arbitrary file system write, and security feature bypass. Adobe is not aware of any exploits in the wild for these issues."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGY106zSt1kikB4g5z8KEcF5pQuZMUHKHFmn4qgruWHYeQgnm_DLQQ68Cu_jv0p2k_7mXoWm0J4KUssnH0nD2adro6XBYdRiIV3SByE7lD1f6-oHHwIHSngF05rmR01iiS0yjSTcMLOzuK44ms-Kxq-7wPC-O2gqsUYt5NF-ORNU1Q=",
+      "summary": "This update addresses multiple vulnerabilities rated critical, high, and medium, which could lead to arbitrary code execution, privilege escalation, arbitrary file system write, and security feature bypass."
     },
     {
       "id": "CVE-2026-103849",
       "severity": "critical",
       "title": "BlockStrap: Magento and Adobe Commerce RCE",
       "published": "2026-10-13",
-      "url": "https://sansec.io/research/blockstrap-magento-adobe-commerce-rce-cve-2026-103849",
-      "summary": "This is a CVSS 10.0 flaw that gives unauthenticated attackers remote code execution, fixed in APSB26-153 but requiring a manual patch. New installations remain vulnerable."
-    },
-    {
-      "id": "CVE-2026-92909",
-      "severity": "high",
-      "title": "Incorrect Authorization vulnerability in Adobe Commerce",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This high-severity vulnerability is categorized as Incorrect Authorization (CWE-863) and was addressed in APSB26-153. Successful exploitation could lead to privilege escalation."
-    },
-    {
-      "id": "CVE-2026-91013",
-      "severity": "high",
-      "title": "Cross-site Scripting (Stored XSS) vulnerability in Adobe Commerce",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This high-severity vulnerability is a Stored Cross-site Scripting (CWE-79) issue. It was resolved as part of the APSB26-153 security update."
-    },
-    {
-      "id": "CVE-2026-100133",
-      "severity": "high",
-      "title": "Cross-site Scripting (Stored XSS) vulnerability in Adobe Commerce",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This high-severity vulnerability is a Stored Cross-site Scripting (CWE-79) issue. It was resolved as part of the APSB26-153 security update."
-    },
-    {
-      "id": "CVE-2026-92464",
-      "severity": "high",
-      "title": "Improper Input Validation vulnerability in Adobe Commerce",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This high-severity vulnerability is an Improper Input Validation (CWE-20) issue. It was resolved as part of the APSB26-153 security update."
-    },
-    {
-      "id": "CVE-2026-92911",
-      "severity": "high",
-      "title": "Cross-site Scripting (Stored XSS) vulnerability in Adobe Commerce",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This high-severity vulnerability is a Stored Cross-site Scripting (CWE-79) issue. It was resolved as part of the APSB26-153 security update."
-    },
-    {
-      "id": "APSB26-146",
-      "severity": "critical",
-      "title": "Urgent Action Required Critical Security Update Available for Adobe Commerce",
-      "published": "2026-09-07",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This bulletin addresses a critical zero-day vulnerability (CVE-2026-75650), known as 'StyleSmuggler', that allows unauthenticated attackers to execute arbitrary code. Adobe is aware of active exploitation in the wild."
-    },
-    {
-      "id": "CVE-2026-75650",
-      "severity": "critical",
-      "title": "StyleSmuggler: Magento and Adobe Commerce 0-day RCE",
-      "published": "2026-09-07",
-      "url": "https://sansec.io/research/stylesmuggler-magento-adobe-commerce-0-day-rce-cve-2026-75650-under-active-attack",
-      "summary": "Discovered by Sansec, this zero-day vulnerability allows unauthenticated attackers remote code execution and has a CVSS score of 10.0. Attacks started on September 4th, and an emergency hotfix was released."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmKpNQgEqPBkbB4OKQ7QfyI6ftU3_0wo1OxOEYAt13Q0hdR6YZS3mlTUsrs1muQMj-V8o4YTLfDFYymylxOrR56kLPAvurZv6y0GPnd4UX2xpn9yJx",
+      "summary": "A critical (CVSS 10.0) flaw allowing unauthenticated remote code execution, fixed in APSB26-153 but requiring a manual patch for new installations."
     },
     {
       "id": "APSB26-138",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce",
       "published": "2026-09-08",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities. Successful exploitation could lead to arbitrary code execution, privilege escalation, and security feature bypass."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVtLyRwLnbQzPR2jacHw5vFrDyU6fCnvshdd_Y7-OmNkxWc4xe40tVLYTd-2mdvuSy61uvczj7VVdaNODJRe6JN__TkcqcCKsYFyGSQD1CPSB6N5Xg8UnZJmVNMhta9U2ibgHbQQFfYIb_v2d6pE2639eJHmsqWuZPQYpS6xWDwH6DjnUqriohnHDjIlj",
+      "summary": "This regularly scheduled security update resolves critical, important, and moderate vulnerabilities that could lead to arbitrary code execution, privilege escalation, and security feature bypass."
+    },
+    {
+      "id": "CVE-2026-75650 (APSB26-146)",
+      "severity": "critical",
+      "title": "StyleSmuggler: Magento and Adobe Commerce 0-day RCE",
+      "published": "2026-09-07",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHOZwcQn82XyEM_sGe5vtdiVWlpxU2ZZxdfiPzRQpPPggKrUKUBjbf9AbRb0-Oo-wrfFes4-KGLOglHPgScNG12qVYCvc2lmCI8CYUY8edELcSEgvGt4QmJJ4O3t-3PC92oIxSpRTM3w==",
+      "summary": "A critical (CVSS 10.0) zero-day vulnerability allowing unauthenticated remote code execution, actively exploited in the wild, for which Adobe released an emergency hotfix."
     },
     {
       "id": "APSB26-92",
       "severity": "critical",
       "title": "Security update available for Adobe Commerce",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities, including an actively exploited critical incorrect authorization flaw. Successful exploitation could result in security feature bypass, arbitrary code execution, and privilege escalation."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVzzNMA9P0EZiOYiVxRhC5h1ya3mHOMRgwlPmgsNS7xhMQy4NMJjgViQ50UWNoUeIUftJZ-xzP3cukdVHGGnuwY6EJpejifhN9b3gXQMEmNmSrOiRqhfWzN5FXV_AIm_wnZUWdttUIBPxCgynoH5o2OPu95E4HRDCjX_BaLAuZKw==",
+      "summary": "This update resolves critical, important, and moderate vulnerabilities that could result in security feature bypass, arbitrary code execution, and privilege escalation."
     },
     {
       "id": "CVE-2026-71362",
       "severity": "critical",
-      "title": "Incorrect Authorization vulnerability in Adobe Commerce",
+      "title": "Incorrect Authorization Account Takeover",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This critical vulnerability (CVSS 9.1) allows unauthenticated privilege escalation and elevated access to sensitive resources, including customer account takeover. It has been added to CISA's Known Exploited Vulnerabilities catalog."
-    },
-    {
-      "id": "CVE-2026-48413",
-      "severity": "high",
-      "title": "Cross-site Scripting (Stored XSS) vulnerability in Adobe Commerce",
-      "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This high-severity stored XSS vulnerability (CVSS 8.7) could result in arbitrary code execution. Exploitation requires authentication but not administrator privileges."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVzzNMA9P0EZiOYiVxRhC5h1ya3mHOMRgwlPmgsNS7xhMQy4NMJjgViQ50UWNoUeIUftJZ-xzP3cukdVHGGnuwY6EJpejifhN9b3gXQMEmNmSrOiRqhfWzN5FXV_AIm_wnZUWdttUIBPxCgynoH5o2OPu95E4HRDCjX_BaLAuZKw==",
+      "summary": "A critical (CVSS 9.1) incorrect authorization flaw allowing unauthenticated customer account takeover and privilege escalation, added to CISA KEV due to active exploitation."
     },
     {
       "id": "CVE-2026-48414",
       "severity": "high",
-      "title": "Cross-site Scripting (Stored XSS) vulnerability in Adobe Commerce",
+      "title": "Stored Cross-site Scripting (XSS)",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This high-severity stored XSS vulnerability (CVSS 7.7) could result in arbitrary code execution. Exploitation requires authentication and administrator privileges."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVzzNMA9P0EZiOYiVxRhC5h1ya3mHOMRgwlPmgsNS7xhMQy4NMJjgViQ50UWNoUeIUftJZ-xzP3cukdVHGGnuwY6EJpejifhN9b3gXQMEmNmSrOiRqhfWzN5FXV_AIm_wnZUWdttUIBPxCgynoH5o2OPu95E4HRDCjX_BaLAuZKw==",
+      "summary": "A high severity stored cross-site scripting vulnerability that could result in arbitrary code execution, requiring authentication and administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48413",
+      "severity": "high",
+      "title": "Stored Cross-site Scripting (XSS)",
+      "published": "2026-08-11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVzzNMA9P0EZiOYiVxRhC5h1ya3mHOMRgwlPmgsNS7xhMQy4NMJjgViQ50UWNoUeIUftJZ-xzP3cukdVHGGnuwY6EJpejifhN9b3gXQMEmNmSrOiRqhfWzN5FXV_AIm_wnZUWdttUIBPxCgynoH5o2OPu95E4HRDCjX_BaLAuZKw==",
+      "summary": "A high severity stored cross-site scripting vulnerability that could result in arbitrary code execution, requiring authentication but not administrator privileges."
     },
     {
       "id": "CVE-2026-48415",
       "severity": "high",
-      "title": "Incorrect Authorization vulnerability in Adobe Commerce B2B",
+      "title": "Incorrect Authorization (Adobe Commerce B2B)",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This high-severity incorrect authorization vulnerability (CVSS 7.6) could enable a security-feature bypass. Exploitation requires authentication but not administrator privileges."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVzzNMA9P0EZiOYiVxRhC5h1ya3mHOMRgwlPmgsNS7xhMQy4NMJjgViQ50UWNoUeIUftJZ-xzP3cukdVHGGnuwY6EJpejifhN9b3gXQMEmNmSrOiRqhfWzN5FXV_AIm_wnZUWdttUIBPxCgynoH5o2OPu95E4HRDCjX_BaLAuZKw==",
+      "summary": "A high severity incorrect authorization vulnerability affecting Adobe Commerce B2B that could enable a security-feature bypass, requiring authentication but not administrator privileges."
+    },
+    {
+      "id": "CVE-2026-48416",
+      "severity": "high",
+      "title": "Incorrect Authorization",
+      "published": "2026-08-11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVzzNMA9P0EZiOYiVxRhC5h1ya3mHOMRgwlPmgsNS7xhMQy4NMJjgViQ50UWNoUeIUftJZ-xzP3cukdVHGGnuwY6EJpejifhN9b3gXQMEmNmSrOiRqhfWzN5FXV_AIm_wnZUWdttUIBPxCgynoH5o2OPu95E4HRDCjX_BaLAuZKw==",
+      "summary": "A high severity incorrect authorization vulnerability that could enable a security-feature bypass, requiring neither authentication nor administrator privileges."
+    },
+    {
+      "id": "APSB25-71",
+      "severity": "critical",
+      "title": "Security update available for Adobe Commerce",
+      "published": "2026-08-11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFviKFpSKccLpsZgzy8zpKozPXkOcMLxUB6vOY-3i921SzOyGWjU46bq5RcAGwvqAlUT73PMUyDSmD4w4QvY0UeLwhfhe_FijVv_XN8VIrNo8R-92EKlrylQtyPm31GsrDAhQZWYps3XnD3XzyzHQtI1HHQkIGeaxFrIYc=",
+      "summary": "This update resolves critical and important vulnerabilities that could lead to security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service."
     }
   ]
 }
