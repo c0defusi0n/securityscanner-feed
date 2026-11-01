@@ -1,61 +1,61 @@
 {
-  "updated": "2026-11-01T06:10:29Z",
+  "updated": "2026-11-01T13:28:24Z",
   "items": [
     {
       "id": "APSB26-153 / CVE-2026-103849",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce | APSB26-153 (includes BlockStrap)",
+      "title": "Multiple Vulnerabilities, including Template Engine Injection (BlockStrap)",
       "published": "2026-10-13",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This bulletin addresses 11 vulnerabilities, with CVE-2026-103849 being a critical template engine injection flaw (BlockStrap) allowing unauthenticated remote code execution. Adobe recommends applying the patch, though no exploitation in the wild was known at the time of publication."
-    },
-    {
-      "id": "CVE-2026-92909",
-      "severity": "critical",
-      "title": "Incorrect authorization flaw in Adobe Commerce B2B",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This critical vulnerability, part of APSB26-153, affects Adobe Commerce B2B and allows unauthenticated code execution due to an incorrect authorization flaw. It has a CVSS score of 9.8."
-    },
-    {
-      "id": "CVE-2025-54236 (SessionReaper)",
-      "severity": "critical",
-      "title": "SessionReaper, unauthenticated RCE in Magento & Adobe Commerce",
-      "published": "2026-10-22",
-      "url": "https://sansec.io/research/sessionreaper-magento-rce",
-      "summary": "This critical vulnerability (CVSS 9.1) allows customer account takeover and unauthenticated remote code execution under certain conditions, with mass attacks observed in October 2026. The bug involves session deserialization and arbitrary file uploads."
+      "summary": "Adobe released a security update addressing 11 vulnerabilities, with CVE-2026-103849 being a critical template engine injection (BlockStrap) allowing unauthenticated arbitrary code execution. This bulletin also fixes an incorrect authorization flaw in B2B (CVE-2026-92909) allowing unauthenticated code execution."
     },
     {
       "id": "APSB26-146 / CVE-2026-75650",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce | APSB26-146 (StyleSmuggler zero-day)",
+      "title": "Template Engine Injection (StyleSmuggler)",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This emergency hotfix addresses a critical zero-day vulnerability (StyleSmuggler) allowing unauthenticated remote code execution, which Adobe confirmed was being exploited in the wild. It involves improper neutralization of special elements in a template engine."
+      "summary": "Adobe released an emergency security update for a critical template engine injection vulnerability, publicly known as StyleSmuggler, that allows unauthenticated attackers to execute arbitrary code. Adobe is aware of this CVE being exploited in the wild."
     },
     {
-      "id": "APSB26-138",
+      "id": "APSB26-138 / CVE-2026-76200, CVE-2026-76201",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce | APSB26-138",
+      "title": "Multiple Vulnerabilities, including Stored Cross-Site Scripting and Incorrect Authorization",
       "published": "2026-09-08",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This regular September bulletin resolves eight vulnerabilities, including six exploitable without authentication, which could lead to security feature bypass and privilege escalation. Adobe was not aware of any exploits in the wild for these issues at the time of publication."
+      "url": "https://magento.watch/api/v1/magento-community/versions/2.4.7/security",
+      "summary": "This security bulletin addresses eight vulnerabilities, six of which are exploitable without authentication, including two critical stored cross-site scripting flaws (CVE-2026-76200, CVE-2026-76201) and several incorrect authorization flaws. Successful exploitation could lead to security feature bypass and privilege escalation."
     },
     {
-      "id": "APSB26-92 / CVE-2026-71362",
+      "id": "CVE-2026-71362",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce | APSB26-92",
+      "title": "Incorrect Authorization Vulnerability",
       "published": "2026-08-11",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
-      "summary": "This bulletin resolves seven vulnerabilities, five of which are critical, including CVE-2026-71362, an unauthenticated customer account takeover flaw with a CVSS score of 9.1. Exploitation requires no existing account, administrator privileges, or user interaction."
+      "url": "https://www.rescana.com/cve/2026/71362",
+      "summary": "An unauthenticated incorrect authorization flaw allows remote attackers to bypass access controls and gain elevated privileges over sensitive store data and configuration without user interaction. This vulnerability was added to the CISA KEV catalog on September 24, 2026."
+    },
+    {
+      "id": "APSB25-71",
+      "severity": "critical",
+      "title": "Multiple Vulnerabilities, including Security Feature Bypass and Privilege Escalation",
+      "published": "2026-08-11",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb25-71.html",
+      "summary": "Adobe released a security update resolving critical and important vulnerabilities that could lead to security feature bypass, privilege escalation, arbitrary file system read, and application denial-of-service. Adobe was not aware of any exploits in the wild for these issues at the time of publication."
     },
     {
       "id": "APSB26-73 / CVE-2026-48356",
       "severity": "critical",
-      "title": "Adobe Commerce and Magento CVE-2026-48356 (PolyShell) Added to CISA KEV",
+      "title": "Unrestricted Upload of File with Dangerous Type (PolyShell)",
       "published": "2026-07-14",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
-      "summary": "This critical file upload flaw, named 'PolyShell' by Sansec, could result in arbitrary code execution and was added to CISA's Known Exploited Vulnerabilities catalog in October 2026. Exploitation requires user interaction with a maliciously crafted URL or compromised web page."
+      "url": "https://www.rescana.com/cve/2026/48356",
+      "summary": "This critical vulnerability, known as PolyShell, allows unauthenticated attackers to upload executable files to any store via the REST API, potentially leading to arbitrary code execution. CISA added this flaw to its Known Exploited Vulnerabilities catalog on October 27, 2026."
+    },
+    {
+      "id": "CVE-2026-45247",
+      "severity": "critical",
+      "title": "PHP Object Injection in Mirasvit Cache Warmer",
+      "published": "2026-05-26",
+      "url": "https://sansec.io/research/mirasvit-cache-warmer-vulnerability",
+      "summary": "Sansec discovered an unauthenticated PHP object injection flaw in the Mirasvit Cache Warmer extension, allowing remote code execution via a crafted cookie on any storefront page. Mirasvit released a patched version (1.11.12) to address this vulnerability."
     }
   ]
 }
