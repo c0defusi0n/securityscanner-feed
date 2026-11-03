@@ -1,45 +1,29 @@
 {
-  "updated": "2026-11-02T15:58:53Z",
+  "updated": "2026-11-03T00:59:43Z",
   "items": [
     {
-      "id": "APSB26-153",
+      "id": "APSB26-153 / CVE-2026-103849",
       "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Security update available for Adobe Commerce (BlockStrap)",
       "published": "2026-10-13",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This update addresses multiple vulnerabilities, including critical arbitrary code execution (CVE-2026-103849, CVSS 10.0), privilege escalation, arbitrary file system write, and security feature bypass issues. Adobe is not aware of any exploits in the wild for the issues addressed in this specific update."
+      "summary": "This update addresses multiple vulnerabilities, including a critical template engine injection (CVE-2026-103849, CVSS 10.0) that allows unauthenticated attackers to execute arbitrary code. Adobe reports no exploitation in the wild yet, but Sansec reproduced four attack routes within 24 hours."
     },
     {
-      "id": "CVE-2026-103849",
+      "id": "CVE-2026-48356 (PolyShell)",
       "severity": "critical",
-      "title": "BlockStrap: Magento and Adobe Commerce RCE",
-      "published": "2026-10-13",
-      "url": "https://sansec.io/research/blockstrap-magento-rce-cve-2026-103849",
-      "summary": "A CVSS 10.0 Magento and Adobe Commerce flaw that gives unauthenticated attackers remote code execution via a template engine injection. Adobe fixed it in APSB26-153, but a manual patch is required, and new installs may remain vulnerable."
+      "title": "Unrestricted Upload of File with Dangerous Type",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "This critical vulnerability, also known as PolyShell, allows for arbitrary code execution due to an unrestricted file upload. CISA added it to its Known Exploited Vulnerabilities (KEV) catalog on October 27, 2026, indicating active exploitation in the wild."
     },
     {
-      "id": "CVE-2026-92909",
+      "id": "APSB26-146 / CVE-2026-75650",
       "severity": "critical",
-      "title": "Incorrect Authorization in Adobe Commerce B2B",
-      "published": "2026-10-13",
-      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
-      "summary": "This critical vulnerability affects Adobe Commerce B2B and allows unauthenticated code execution. It was addressed as part of the APSB26-153 security update."
-    },
-    {
-      "id": "APSB26-146",
-      "severity": "critical",
-      "title": "Security update available for Adobe Commerce",
+      "title": "Security update available for Adobe Commerce (StyleSmuggler)",
       "published": "2026-09-07",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-      "summary": "This emergency security update resolves a critical vulnerability (CVE-2026-75650) that could result in arbitrary code execution. Adobe is aware of CVE-2026-75650 being exploited in the wild."
-    },
-    {
-      "id": "CVE-2026-75650",
-      "severity": "critical",
-      "title": "StyleSmuggler: Magento and Adobe Commerce 0-day RCE under active attack",
-      "published": "2026-09-05",
-      "url": "https://sansec.io/research/stylesmuggler-magento-rce-cve-2026-75650",
-      "summary": "Sansec discovered this zero-day vulnerability that gives unauthenticated attackers remote code execution by injecting malicious code into Magento's template system. Attacks started on September 4th, and Adobe published an emergency hotfix on September 7th."
+      "summary": "This out-of-band security update addresses a critical vulnerability (CVE-2026-75650, CVSS 10.0) that allows unauthenticated attackers remote code execution via improper neutralization of special elements in a template engine. Adobe is aware of this CVE being exploited in the wild."
     },
     {
       "id": "APSB26-138",
@@ -47,23 +31,31 @@
       "title": "Security update available for Adobe Commerce",
       "published": "2026-09-08",
       "url": "https://helpx.adobe.com/security/products/magento/apsb26-138.html",
-      "summary": "This update resolves critical, important, and moderate vulnerabilities, including multiple unauthenticated issues. Successful exploitation could result in security feature bypass and privilege escalation."
+      "summary": "This security update resolves critical, important, and moderate vulnerabilities, including six exploitable without authentication, that could result in security feature bypass and privilege escalation."
     },
     {
-      "id": "CVE-2026-48356",
+      "id": "CVE-2025-54236 (SessionReaper)",
       "severity": "critical",
-      "title": "PolyShell: Unrestricted File Upload in Adobe Commerce and Magento Open Source",
-      "published": "2026-07-14",
-      "url": "https://www.rescana.com/blog/adobe-commerce-and-magento-cve-2026-48356-polyshell-added-to-cisa-kev-apply-apsb26-73-and-check-for-planted-files/",
-      "summary": "This critical file upload flaw was fixed in APSB26-73 and added to CISA's Known Exploited Vulnerabilities (KEV) catalog on October 27, 2026, indicating active exploitation. It allows an unauthenticated attacker to upload arbitrary files."
+      "title": "Unauthenticated RCE in Magento & Adobe Commerce",
+      "published": "2025-08-01",
+      "url": "https://www.sansec.io/research/sessionreaper-magento-rce",
+      "summary": "Discovered in August 2025, this critical vulnerability (CVSS 9.1) allows customer account takeover and unauthenticated remote code execution. Sansec observed mass attacks exploiting SessionReaper starting October 22, 2026, despite an emergency fix released by Adobe in early September 2025."
     },
     {
-      "id": "CVE-2025-54236",
+      "id": "CVE-2026-71362",
       "severity": "critical",
-      "title": "SessionReaper, unauthenticated RCE in Magento & Adobe Commerce",
-      "published": "2025-08-XX",
-      "url": "https://sansec.io/research/sessionreaper-magento-rce-cve-2025-54236",
-      "summary": "A critical flaw discovered in August 2025 allows customer account takeover and unauthenticated remote code execution under certain conditions. Active exploitation was observed starting October 22, 2026, with automated attacks hitting many stores."
+      "title": "Unauthenticated Incorrect Authorization Flaw",
+      "published": "2026-08-01",
+      "url": "https://magento.watch/security/bulletins/APSB26-92",
+      "summary": "This vulnerability, part of the August 2026 patch set, is an unauthenticated incorrect authorization flaw (CVSS 9.1) that could lead to security feature bypass, arbitrary code execution, and privilege escalation."
+    },
+    {
+      "id": "CVE-2024-34102 (CosmicSting)",
+      "severity": "critical",
+      "title": "Worst bug to hit Magento and Adobe Commerce stores in two years",
+      "published": "2024-09-16",
+      "url": "https://www.sansec.io/research/cosmicsting-attack-defense-overview",
+      "summary": "CosmicSting, also known as CVE-2024-34102, is a critical vulnerability that Sansec observes is actively being exploited, with stores getting hacked at a rate of 5 to 30 per hour as of September 2026."
     }
   ]
 }
