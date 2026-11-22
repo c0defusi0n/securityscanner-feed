@@ -1,77 +1,37 @@
 {
-  "updated": "2026-11-22T06:53:16Z",
+  "updated": "2026-11-22T19:43:24Z",
   "items": [
     {
-      "id": "APSB26-153 / CVE-2026-103849",
+      "id": "CVE-2026-48356",
       "severity": "critical",
-      "title": "BlockStrap: Unauthenticated Remote Code Execution via Template Engine Injection",
-      "published": "2026-10-13",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-153.html",
-      "summary": "This critical vulnerability, dubbed 'BlockStrap', allows unauthenticated attackers to achieve remote code execution by injecting malicious PHP code into the template engine. Adobe released a fix on October 13, 2026, though Sansec warns of its high exploitability despite Adobe's Priority 2 rating."
+      "title": "PolyShell: Unrestricted Upload of File with Dangerous Type (Arbitrary Code Execution)",
+      "published": "2026-07-16",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgEOFvt-CsWSCH98k8l4sYtsGAUVmwBlYyuDzMTCIp-dLSl4xkCTOuDKrssljzYiU4UF-gQLv_XsubW9qYr5H1f9kj5fcfJDHhI-dc1hAoHgNgHbve_K7q95Jgzv5jEhCpAX6WFg5NSEjBkPaH2tMaNdurXN9bBpTB7kBblh9NRDrXKhU6T4Cj8ey14cc",
+      "summary": "This vulnerability, also known as PolyShell, allows for unrestricted file upload with dangerous types, leading to arbitrary code execution. It has a CVSS score of 9.3 and has been actively exploited, with hundreds of stores breached by injecting malicious loaders via Magento CMS blocks."
     },
     {
-      "id": "APSB26-153 / CVE-2026-92909",
+      "id": "CVE-2026-71362",
       "severity": "critical",
-      "title": "Incorrect Authorization leading to Unauthenticated Code Execution in B2B",
-      "published": "2026-10-13",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-153.html",
-      "summary": "Part of the APSB26-153 bulletin, this critical flaw in Adobe Commerce B2B allows unauthenticated attackers to execute code due to incorrect authorization."
+      "title": "Incorrect Authorization (Customer Account Takeover)",
+      "published": "2026-08-11",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfdFwPm40n6_cTlc7VZZP8TscNUqYFUse3RUBzAS2iUopA9XkTRF53EqE1nVe0vBUT3U9pzVbnA2dzCn7JrAooVvOckhGal3ZVtZu4h_hhQYrHMgAXZZ_rE2c3kCurJkgBVoBaj7316U9tTrJIhitZzZ-YaXVO8mE_PzrEenk",
+      "summary": "Addressed in APSB26-92, this critical vulnerability with a CVSS score of 9.1 allows unauthenticated attackers to take over customer accounts. Exploitation requires no existing account, administrator privileges, or user interaction, granting access to victim's account and private data."
     },
     {
-      "id": "APSB26-153 / CVE-2026-92908",
-      "severity": "high",
-      "title": "Incorrect Authorization (Privilege Escalation / Security Feature Bypass)",
-      "published": "2026-10-13",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-153.html",
-      "summary": "This high-severity vulnerability allows a low-privileged, authenticated attacker to bypass security controls and gain unauthorized read and write access to protected resources. It was disclosed as part of APSB26-153."
-    },
-    {
-      "id": "APSB26-146 / CVE-2026-75650",
+      "id": "CVE-2026-75650",
       "severity": "critical",
-      "title": "StyleSmuggler: Unauthenticated Remote Code Execution (RCE)",
+      "title": "StyleSmuggler: Improper Neutralization of Special Elements Used in a Template Engine (Remote Code Execution)",
       "published": "2026-09-07",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-146.html",
-      "summary": "This zero-day vulnerability, actively exploited in the wild, allows unauthenticated attackers to achieve remote code execution by injecting malicious code into Magento's template system. Adobe released an emergency hotfix on September 7, 2026, with a CVSS score of 10.0."
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0X6KD_8ILTtxh-4_C_fNnhIfyf4sJ6ZnXYinT9H_lXXs532cG3Ul26rkuYEpab1E8jtN704dfpjukLUAbuuRkjgIIrYAKJLxxUgZPis5FTs1QNz55FJfplZDyqqyLy7Qc3jbS9sGrNPl4oXVi2QXsjK6c_dZe1HovHQ",
+      "summary": "This zero-day RCE vulnerability, dubbed StyleSmuggler, allows unauthenticated attackers to execute arbitrary code with a CVSS score of 10.0. Attacks were observed starting September 4th, 2026, leading to the injection of malicious code into Magento's template system and the installation of remote access trojans."
     },
     {
-      "id": "APSB26-138 / CVE-2026-76200, CVE-2026-76201",
+      "id": "CVE-2026-103849",
       "severity": "critical",
-      "title": "Multiple Stored Cross-site Scripting (XSS) Vulnerabilities",
-      "published": "2026-09-08",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-138.html",
-      "summary": "This bulletin addresses multiple critical stored XSS flaws, two of which are exploitable without authentication, potentially leading to security feature bypass and privilege escalation."
-    },
-    {
-      "id": "APSB26-138 / CVE-2026-77111, CVE-2026-77109, CVE-2026-77774, CVE-2026-76202",
-      "severity": "critical",
-      "title": "Multiple Incorrect Authorization Vulnerabilities",
-      "published": "2026-09-08",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-138.html",
-      "summary": "APSB26-138 includes several critical incorrect authorization flaws, with six of the eight vulnerabilities in the bulletin exploitable without authentication, potentially leading to security feature bypass and privilege escalation."
-    },
-    {
-      "id": "APSB26-73 / CVE-2026-48356",
-      "severity": "critical",
-      "title": "PolyShell: Unrestricted File Upload leading to Remote Code Execution",
-      "published": "2026-07-14",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-73.html",
-      "summary": "This critical vulnerability, known as PolyShell, allows an unauthenticated attacker to upload a file with a dangerous type, which the server then treats as code, leading to arbitrary code execution. CISA added it to the Known Exploited Vulnerabilities catalog on October 27, 2026, due to active exploitation."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-71362",
-      "severity": "critical",
-      "title": "Incorrect Authorization (Privilege Escalation)",
-      "published": "2026-08-11",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-92.html",
-      "summary": "This critical incorrect authorization flaw allows unauthenticated attackers to elevate their privileges, potentially taking over other customer accounts. Exploitation attempts were observed shortly after Adobe released patches on August 11, 2026."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-48414, CVE-2026-48413",
-      "severity": "high",
-      "title": "Multiple Cross-site Scripting (Stored XSS) Vulnerabilities",
-      "published": "2026-08-11",
-      "url": "https://www.adobe.com/trust/security/products/commerce/apsb26-92.html",
-      "summary": "APSB26-92 addresses multiple high-severity stored XSS vulnerabilities that could lead to arbitrary code execution."
+      "title": "BlockStrap: Improper Neutralization of Special Elements Used in a Template Engine (Remote Code Execution)",
+      "published": "2026-10-13",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEd4Y4hC2K6PnnJi2A6hXcAlOPcOOy7Svk0r3V5TirTjl9EAJiDl1dikGK_I2yzhiLX5CQDDuIe7T5klIW7S6kyt62PmPA86E2zW6_xxRPvDCZJl-4qWeFsBFCCrIn_TIG2K5ExbpVflG34Q",
+      "summary": "Fixed in APSB26-153, BlockStrap is a critical vulnerability with a CVSS score of 10.0 that enables unauthenticated attackers to achieve remote code execution through a template engine injection. While no exploitation has been observed yet, researchers have reproduced multiple attack routes."
     }
   ]
 }
