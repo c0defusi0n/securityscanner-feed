@@ -1,45 +1,37 @@
 {
-  "updated": "2026-11-26T08:23:43Z",
+  "updated": "2026-11-26T21:36:07Z",
   "items": [
     {
-      "id": "CVE-2026-48356 (PolyShell)",
+      "id": "CVE-2026-103849 / APSB26-153",
       "severity": "critical",
-      "title": "Unrestricted File Upload (PolyShell)",
-      "published": "2026-11-06",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb7mfivALbZ5n7SD46Bts3NcjGAGWuVKjf6QQ5qSr1YZY_Rh6zBLGm_uO6OBqp5fVW3nXwrd32CNVz-gqERdXrjlr77a5_AVx3KmCNasKXyNE4kzoS-tEMqogHKhongu3uQ7LAITxXsF8iyeY2fRCQIweaTEDqfJ6jGziZvXSmjgJqEALFAmCULkvSfKp0l1nehXeRkpQrRi8uNQvnhKF1s6iAScDejHw3-Z7iqvHbIr-2",
-      "summary": "PolyShell is an unrestricted file upload flaw in Adobe Commerce and Magento Open Source that allows attackers to upload disguised image files containing PHP code via the guest cart API. This vulnerability, rated Critical, can lead to privilege escalation and is actively exploited in the wild."
-    },
-    {
-      "id": "APSB26-153 / CVE-2026-103849 (BlockStrap)",
-      "severity": "critical",
-      "title": "Multiple Vulnerabilities, including Remote Code Execution (BlockStrap)",
+      "title": "Template engine injection (BlockStrap)",
       "published": "2026-10-13",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-lrgOiY3XhVrYmIWoc4x2ua8QK3Fb7gk_p66kQSF8pNyFE6jMfYNZ8LaUnpfQgQNh85A8DmZJksBdNOXfFqWVPwQdm3fpl5k-ygxD4MFRanNP6xOuKTvWTd1lvaPD7l_-mlgRrDl2bz6aLZUhgXk0zP8xZNidqhB6",
-      "summary": "Adobe released APSB26-153 on October 13, 2026, addressing 11 vulnerabilities, including critical, high, and medium severity issues. The most critical, CVE-2026-103849 (BlockStrap), is a template engine injection with a CVSS score of 10.0, allowing unauthenticated remote code execution."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-153.html",
+      "summary": "A critical vulnerability allowing unauthenticated remote code execution through template engine injection. Adobe fixed it in the October 2026 security update, but a manual patch is required, and new installations remain vulnerable."
     },
     {
-      "id": "CVE-2026-75650 (StyleSmuggler)",
+      "id": "CVE-2026-75650 / APSB26-146",
       "severity": "critical",
-      "title": "Improper Neutralisation of Special Elements Used in a Template Engine (StyleSmuggler)",
+      "title": "Improper Neutralization of Special Elements Used in a Template Engine (StyleSmuggler)",
       "published": "2026-09-07",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFT9XGNNfzka5rvHCaLJaidtC5JZ4WQi_s22c-cXQHJggcKahGOhJQFbS3fO6U6oF_y4z4wuJEFt32q2CcC7vI3HWZKQIfCWJIamqSTzhqAFOi4Am2H7Qb24dYLH0ejtXdmbksr0TQ",
-      "summary": "StyleSmuggler (CVE-2026-75650) is a zero-day vulnerability in Magento and Adobe Commerce that allows unauthenticated attackers to achieve remote code execution. Adobe released an emergency hotfix on September 7, 2026, for this flaw, which has a CVSS score of 10.0 and was actively exploited in the wild."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
+      "summary": "A critical vulnerability with a CVSS score of 10.0 that allows unauthenticated attackers to achieve remote code execution. Adobe released an emergency hotfix, and it has been actively exploited in the wild."
     },
     {
-      "id": "APSB26-138",
-      "severity": "high",
-      "title": "Security Update for Adobe Commerce and Magento Open Source",
-      "published": "2026-09-08",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwGe6Uf8PD8Sf5g4RQ8gbb6NaLFJ66OEry4uMoukNNpViabgzST8MKVWX2EXjodfWiTNLToH5We0gIic1W07A9dz31xTP7kIBF7dWOEW1nyFgN-iMmbPTMZTz7fg8t0TpS7mbbSHUoiqitvRZ5qB1Et4XV1R0NXOVwQlD4dXKN_g==",
-      "summary": "APSB26-138, released on September 8, 2026, addresses multiple vulnerabilities in Adobe Commerce and Magento Open Source, including issues that could lead to security feature bypass and privilege escalation. Adobe recommends applying this update in addition to the hotfix for CVE-2026-75650."
-    },
-    {
-      "id": "APSB26-92 / CVE-2026-71362",
+      "id": "CVE-2026-71362 / APSB26-92",
       "severity": "critical",
-      "title": "Unauthenticated Customer Account Takeover and other vulnerabilities",
+      "title": "Incorrect Authorization",
       "published": "2026-08-11",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeILsikoS_-saCjKP6Ih2xZpyEdJ6WWPYw8BwE1JdlRfz92Km67dRZdwRN_5E8aNeJ9_lamxMyjEMCxBghLAedkxmEiOlmhK6_zmHxfdUud1IB0YKVYLxs7sQBNLqwfXlSkhHP2Jo4oI5hrNGUWCy3EXg8zZehQ6f0TaVTptw=",
-      "summary": "APSB26-92, released on August 11, 2026, fixes seven vulnerabilities, including CVE-2026-71362, a critical unauthenticated customer account takeover with a CVSS score of 9.1. This flaw allows attackers to switch customer sessions and access private data without requiring an existing account or user interaction."
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-92.html",
+      "summary": "A critical incorrect authorization vulnerability (CVSS 9.1) that allows an unauthenticated attacker to gain elevated access to sensitive resources without user interaction. This flaw has been actively exploited and was added to CISA's Known Exploited Vulnerabilities catalog."
+    },
+    {
+      "id": "CVE-2026-48356 / APSB26-73",
+      "severity": "critical",
+      "title": "Unrestricted Upload of Dangerous File Type (PolyShell)",
+      "published": "2026-07-14",
+      "url": "https://helpx.adobe.com/security/products/magento/apsb26-73.html",
+      "summary": "A critical unrestricted file upload vulnerability (CVSS 9.3) that allows attackers to upload disguised image files containing PHP code through guest cart APIs. This vulnerability has been actively exploited, with hundreds of stores breached."
     }
   ]
 }
